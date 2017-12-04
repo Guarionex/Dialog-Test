@@ -341,6 +341,162 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 126562275}
+--- !u!1 &142110139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1685643394621286, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 142110142}
+  - component: {fileID: 142110141}
+  - component: {fileID: 142110140}
+  m_Layer: 5
+  m_Name: MiddleText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &142110140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114731227357277980, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 142110139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Continue
+--- !u!222 &142110141
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222127892629406922, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 142110139}
+--- !u!224 &142110142
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224325291427971474, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 142110139}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881592607}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &164626262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1639216046723740, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 164626265}
+  - component: {fileID: 164626264}
+  - component: {fileID: 164626263}
+  m_Layer: 5
+  m_Name: DialogueText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &164626263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114650297408542474, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 164626262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: This is the text that shows up for the NPC
+--- !u!222 &164626264
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222360808310543802, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 164626262}
+--- !u!224 &164626265
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224335411814259036, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 164626262}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1386562691}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &204535796
 Prefab:
   m_ObjectHideFlags: 0
@@ -781,6 +937,133 @@ Transform:
   m_Father: {fileID: 999006266}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &372272141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1720363611823238, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 372272142}
+  - component: {fileID: 372272145}
+  - component: {fileID: 372272144}
+  - component: {fileID: 372272143}
+  m_Layer: 5
+  m_Name: LeftButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &372272142
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224912819973488066, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372272141}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -215, y: -65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1346960188}
+  m_Father: {fileID: 1386562691}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 110, y: 35}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &372272143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114909744724612564, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372272141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 372272144}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 468697088}
+        m_MethodName: Choice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &372272144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114279996722316772, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372272141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &372272145
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222927594132005832, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372272141}
 --- !u!1 &385399442
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,11 +1214,153 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400144, guid: 02bf6d973b5748c43830083a142e7d14, type: 3}
   m_PrefabInternal: {fileID: 461325873}
---- !u!1 &468697083 stripped
+--- !u!1 &462833733
 GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1836883731606962, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 462833734}
+  - component: {fileID: 462833737}
+  - component: {fileID: 462833736}
+  - component: {fileID: 462833735}
+  m_Layer: 5
+  m_Name: RightButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &462833734
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224118688404727338, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462833733}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 215, y: -65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1676640767}
+  m_Father: {fileID: 1386562691}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -110, y: 35}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &462833735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114403929982029980, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462833733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 462833736}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 468697088}
+        m_MethodName: Choice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &462833736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114621208398917958, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462833733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &462833737
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222465915879282510, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462833733}
+--- !u!1 &468697083
+GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1350452765949332, guid: 892eba7ef3eb9434eb71d4927792cf5f,
     type: 2}
-  m_PrefabInternal: {fileID: 2070016234}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 468697087}
+  - component: {fileID: 468697086}
+  - component: {fileID: 468697085}
+  - component: {fileID: 468697088}
+  - component: {fileID: 468697084}
+  m_Layer: 5
+  m_Name: DialogueCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &468697084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,21 +1377,172 @@ MonoBehaviour:
   blockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!224 &468697087 stripped
+--- !u!114 &468697085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114639109541998284, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468697083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &468697086
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 223048235385369484, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468697083}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 365836834}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &468697087
 RectTransform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
     type: 2}
-  m_PrefabInternal: {fileID: 2070016234}
---- !u!114 &468697088 stripped
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468697083}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.3160019, z: 1.23}
+  m_LocalScale: {x: 0.0023441573, y: 0.0023441575, z: 0.0023441575}
+  m_Children:
+  - {fileID: 1386562691}
+  - {fileID: 934603847}
+  - {fileID: 1373096621}
+  m_Father: {fileID: 999006266}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.316}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &468697088
 MonoBehaviour:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 114568266672271090, guid: 892eba7ef3eb9434eb71d4927792cf5f,
     type: 2}
-  m_PrefabInternal: {fileID: 2070016234}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468697083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b682827a679efa448de5d8be7b5d666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc: {fileID: 1005173625}
+  dialogueText: {fileID: 164626263}
+  leftText: {fileID: 1346960186}
+  rightText: {fileID: 1676640765}
+  middleText: {fileID: 142110140}
+  backPanel: {fileID: 1386562688}
+  ship: {fileID: 385399442}
 --- !u!4 &533858612 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 399d09fd32c010245bc6c2bbf288d2d7, type: 3}
   m_PrefabInternal: {fileID: 1891442837}
+--- !u!1 &540170826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1264906282062866, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 540170827}
+  - component: {fileID: 540170829}
+  - component: {fileID: 540170828}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &540170827
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224067023490205276, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 540170826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 934603847}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &540170828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114934289870918106, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 540170826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Main Story
+--- !u!222 &540170829
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222884008146969092, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 540170826}
 --- !u!1001 &541993043
 Prefab:
   m_ObjectHideFlags: 0
@@ -1787,6 +2363,149 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400008, guid: d3a2e34afc8b20e4d8c0877b2f5a02ba, type: 3}
   m_PrefabInternal: {fileID: 911392815}
+--- !u!1 &934603846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1712689608919342, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 934603847}
+  - component: {fileID: 934603851}
+  - component: {fileID: 934603850}
+  - component: {fileID: 934603849}
+  - component: {fileID: 934603848}
+  m_Layer: 5
+  m_Name: Main Story
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &934603847
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224726701751491280, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934603846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -231, y: -110, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 540170827}
+  m_Father: {fileID: 468697087}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -231, y: -110}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!64 &934603848
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 64275717802506254, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934603846}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 0}
+--- !u!114 &934603849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114551356922735786, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934603846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 934603850}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 468697088}
+        m_MethodName: MainSotry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &934603850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114143039347983480, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934603846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9044118, g: 0.053200692, b: 0.053200692, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &934603851
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222752970172840166, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934603846}
 --- !u!1001 &978792220
 Prefab:
   m_ObjectHideFlags: 0
@@ -1979,1328 +2698,214 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 13
+  - CurrentId: 62
     NewWindowOpen: 0
-    FirstWindow:
-      ID: 0
-      Size:
-        serializedVersion: 2
-        x: 41
-        y: 300
-        width: 150
-        height: 115
-      Text: Hello! Can I change
-      Type: 0
-      NodeType: 0
-      Parent: -1
-      Trigger: 0
-      TriggerText: 
-      Connections: 0a000000
+    FirstWindow: 0
     Windows:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 41
-        y: 300
+        x: 70
+        y: 104
         width: 150
-        height: 115
-      Text: Hello! Can I change
-      Type: 0
+        height: 125
+      Text: 
+      Type: 1
       NodeType: 0
       Parent: -1
       Trigger: 0
       TriggerText: 
-      Connections: 0a000000
+      Connections: 03000000
     - ID: 1
       Size:
         serializedVersion: 2
-        x: 221
-        y: 304
+        x: 402
+        y: 105
         width: 150
-        height: 115
-      Text: Nice to meet you!!!!
+        height: 125
+      Text: Welcome to the USS Elusive Empress.
       Type: 0
+      NodeType: 1
+      Parent: 0
+      Trigger: 1
+      TriggerText: XOTalk
+      Connections: 02000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 401
+        y: 242
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 240
+        y: 106
+        width: 150
+        height: 125
+      Text: Start
+      Type: 2
       NodeType: 1
       Parent: 0
       Trigger: 0
       TriggerText: 
-      Connections: 0c000000
-    - ID: 2
-      Size:
-        serializedVersion: 2
-        x: 532
-        y: 297
-        width: 150
-        height: 115
-      Text: What's your name?
-      Type: 1
-      NodeType: 1
-      Parent: 1
-      Trigger: 1
-      TriggerText: Name
-      Connections: 030000000400000005000000
-    - ID: 3
-      Size:
-        serializedVersion: 2
-        x: 810
-        y: 214
-        width: 150
-        height: 115
-      Text: Bob
-      Type: 2
-      NodeType: 1
-      Parent: 2
-      Trigger: 0
-      TriggerText: 
-      Connections: 07000000
+      Connections: 01000000
     - ID: 4
       Size:
         serializedVersion: 2
-        x: 818
-        y: 386
+        x: 402
+        y: 381
         width: 150
-        height: 115
-      Text: '[Say nothing]'
+        height: 125
+      Text: All stations report
       Type: 2
       NodeType: 1
       Parent: 2
       Trigger: 0
       TriggerText: 
-      Connections: 06000000
+      Connections: 05000000
     - ID: 5
       Size:
         serializedVersion: 2
-        x: 653
-        y: 518
+        x: 569
+        y: 106
         width: 150
-        height: 115
-      Text: None ya
-      Type: 2
-      NodeType: 1
-      Parent: 2
-      Trigger: 0
-      TriggerText: 
-      Connections: 08000000
-    - ID: 6
-      Size:
-        serializedVersion: 2
-        x: 1058
-        y: 390
-        width: 150
-        height: 115
-      Text: Uh... okay?
-      Type: 0
+        height: 125
+      Text: Helm, standing by
+      Type: 1
       NodeType: 1
       Parent: 4
       Trigger: 0
       TriggerText: 
-      Connections: 08000000
-    - ID: 7
+      Connections: 090000000a000000
+    - ID: 9
       Size:
         serializedVersion: 2
-        x: 1256
-        y: 379
+        x: 754
+        y: 108
         width: 150
-        height: 115
-      Text: That sounds like a lie!
-      Type: 0
-      NodeType: 1
-      Parent: 3
-      Trigger: 1
-      TriggerText: Liar
-      Connections: 08000000
-    - ID: 8
-      Size:
-        serializedVersion: 2
-        x: 868
-        y: 585
-        width: 150
-        height: 115
-      Text: Well, I guess it's nice to meet you.
-      Type: 0
+        height: 125
+      Text: Comms, report
+      Type: 2
       NodeType: 1
       Parent: 5
       Trigger: 0
       TriggerText: 
-      Connections: 09000000
-    - ID: 9
-      Size:
-        serializedVersion: 2
-        x: 1136
-        y: 589
-        width: 150
-        height: 115
-      Text: Well, anyway. Bye.
-      Type: 0
-      NodeType: 2
-      Parent: 8
-      Trigger: 0
-      TriggerText: 
-      Connections: 
+      Connections: 0e000000
     - ID: 10
       Size:
         serializedVersion: 2
-        x: 160
-        y: 153
+        x: 572
+        y: 261
         width: 150
         height: 125
-      Text: Wassup
-      Type: 0
+      Text: What's the helm?
+      Type: 2
       NodeType: 1
-      Parent: 0
+      Parent: 5
       Trigger: 0
       TriggerText: 
       Connections: 0b000000
     - ID: 11
       Size:
         serializedVersion: 2
-        x: 375
-        y: 152
-        width: 150
-        height: 125
-      Text: My man
-      Type: 0
-      NodeType: 1
-      Parent: 10
-      Trigger: 0
-      TriggerText: 
-      Connections: 01000000
-    - ID: 12
-      Size:
-        serializedVersion: 2
-        x: 367
-        y: 474
-        width: 150
-        height: 125
-      Text: I'm good
-      Type: 0
-      NodeType: 1
-      Parent: 1
-      Trigger: 0
-      TriggerText: 
-      Connections: 02000000
-  - CurrentId: 6
-    NewWindowOpen: 0
-    FirstWindow:
-      ID: 0
-      Size:
-        serializedVersion: 2
-        x: 689
-        y: 334
-        width: 150
-        height: 115
-      Text: You again?
-      Type: 0
-      NodeType: 0
-      Parent: -1
-      Trigger: 0
-      TriggerText: 
-      Connections: 01000000
-    Windows:
-    - ID: 0
-      Size:
-        serializedVersion: 2
-        x: 689
-        y: 334
-        width: 150
-        height: 115
-      Text: You again?
-      Type: 0
-      NodeType: 0
-      Parent: -1
-      Trigger: 0
-      TriggerText: 
-      Connections: 01000000
-    - ID: 1
-      Size:
-        serializedVersion: 2
-        x: 849
-        y: 334
-        width: 150
-        height: 115
-      Text: What's up?
-      Type: 1
-      NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 0200000003000000
-    - ID: 2
-      Size:
-        serializedVersion: 2
-        x: 1049
-        y: 244
-        width: 150
-        height: 115
-      Text: '[Say nothing]'
-      Type: 2
-      NodeType: 1
-      Parent: 1
-      Trigger: 0
-      TriggerText: 
-      Connections: 05000000
-    - ID: 3
-      Size:
-        serializedVersion: 2
-        x: 1018
-        y: 456
-        width: 150
-        height: 115
-      Text: Help
-      Type: 2
-      NodeType: 1
-      Parent: 1
-      Trigger: 0
-      TriggerText: 
-      Connections: 04000000
-    - ID: 4
-      Size:
-        serializedVersion: 2
-        x: 1269
-        y: 460
-        width: 150
-        height: 115
-      Text: 'Nah, I''m good. '
-      Type: 0
-      NodeType: 1
-      Parent: 3
-      Trigger: 0
-      TriggerText: 
-      Connections: 05000000
-    - ID: 5
-      Size:
-        serializedVersion: 2
-        x: 1476
-        y: 338
-        width: 150
-        height: 115
-      Text: See ya
-      Type: 0
-      NodeType: 2
-      Parent: 4
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-  - CurrentId: 81
-    NewWindowOpen: 0
-    FirstWindow:
-      ID: 23
-      Size:
-        serializedVersion: 2
-        x: 267
-        y: 102
-        width: 150
-        height: 125
-      Text: Welcome to the USS Elusive Empress.
-      Type: 0
-      NodeType: 0
-      Parent: -1
-      Trigger: 0
-      TriggerText: 
-      Connections: 18000000
-    Windows:
-    - ID: 23
-      Size:
-        serializedVersion: 2
-        x: 100
-        y: 102
-        width: 150
-        height: 125
-      Text: Welcome to the USS Elusive Empress!
-      Type: 0
-      NodeType: 0
-      Parent: -1
-      Trigger: 0
-      TriggerText: 
-      Connections: 50000000
-    - ID: 24
-      Size:
-        serializedVersion: 2
-        x: 427
-        y: 102
-        width: 150
-        height: 125
-      Text: 
-      Type: 1
-      NodeType: 1
-      Parent: 23
-      Trigger: 0
-      TriggerText: 
-      Connections: 19000000
-    - ID: 25
-      Size:
-        serializedVersion: 2
-        x: 587
-        y: 102
-        width: 150
-        height: 125
-      Text: All stations report
-      Type: 2
-      NodeType: 1
-      Parent: 24
-      Trigger: 0
-      TriggerText: 
-      Connections: 1a000000
-    - ID: 26
-      Size:
-        serializedVersion: 2
-        x: 747
-        y: 102
-        width: 150
-        height: 125
-      Text: Helm, standing by.
-      Type: 1
-      NodeType: 1
-      Parent: 25
-      Trigger: 0
-      TriggerText: 
-      Connections: 1b0000001c000000
-    - ID: 27
-      Size:
-        serializedVersion: 2
-        x: 907
-        y: 102
-        width: 150
-        height: 125
-      Text: Comms, report
-      Type: 2
-      NodeType: 1
-      Parent: 26
-      Trigger: 0
-      TriggerText: 
-      Connections: 1e000000
-    - ID: 28
-      Size:
-        serializedVersion: 2
-        x: 745
-        y: 243
-        width: 150
-        height: 125
-      Text: What's the helm?
-      Type: 2
-      NodeType: 1
-      Parent: 26
-      Trigger: 0
-      TriggerText: 
-      Connections: 1f000000
-    - ID: 30
-      Size:
-        serializedVersion: 2
-        x: 1067
-        y: 102
-        width: 150
-        height: 125
-      Text: Communications are online.
-      Type: 1
-      NodeType: 1
-      Parent: 27
-      Trigger: 0
-      TriggerText: 
-      Connections: 2200000023000000
-    - ID: 31
-      Size:
-        serializedVersion: 2
-        x: 742
-        y: 382
+        x: 573
+        y: 401
         width: 150
         height: 125
       Text: The helm controls the ship.
       Type: 1
       NodeType: 1
-      Parent: 28
+      Parent: 10
       Trigger: 0
       TriggerText: 
-      Connections: 20000000
-    - ID: 32
+      Connections: 0c000000
+    - ID: 12
       Size:
         serializedVersion: 2
-        x: 747
-        y: 531
+        x: 573
+        y: 546
         width: 150
         height: 125
       Text: Thanks
       Type: 2
       NodeType: 1
-      Parent: 31
+      Parent: 11
       Trigger: 0
       TriggerText: 
-      Connections: 21000000
-    - ID: 33
+      Connections: 0d000000
+    - ID: 13
       Size:
         serializedVersion: 2
-        x: 748
-        y: 668
+        x: 575
+        y: 683
         width: 150
         height: 125
       Text: 
       Type: 1
       NodeType: 1
-      Parent: 32
+      Parent: 12
       Trigger: 0
       TriggerText: 
-      Connections: 1b000000
-    - ID: 34
+      Connections: 09000000
+    - ID: 14
       Size:
         serializedVersion: 2
-        x: 1227
-        y: 102
+        x: 914
+        y: 108
+        width: 150
+        height: 125
+      Text: Communications are online
+      Type: 1
+      NodeType: 1
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f00000010000000
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 1074
+        y: 108
         width: 150
         height: 125
       Text: How are the nav systems?
       Type: 2
       NodeType: 1
-      Parent: 30
+      Parent: 14
       Trigger: 0
       TriggerText: 
-      Connections: 28000000
-    - ID: 35
+      Connections: 14000000
+    - ID: 16
       Size:
         serializedVersion: 2
-        x: 1070
-        y: 238
+        x: 823
+        y: 251
         width: 150
         height: 125
       Text: What are the comms for?
       Type: 2
       NodeType: 1
-      Parent: 30
-      Trigger: 0
-      TriggerText: 
-      Connections: 24000000
-    - ID: 36
-      Size:
-        serializedVersion: 2
-        x: 1073
-        y: 380
-        width: 150
-        height: 125
-      Text: For communicating with other ships.
-      Type: 1
-      NodeType: 1
-      Parent: 35
-      Trigger: 0
-      TriggerText: 
-      Connections: 26000000
-    - ID: 38
-      Size:
-        serializedVersion: 2
-        x: 1076
-        y: 517
-        width: 150
-        height: 125
-      Text: Thank you Communications Officer
-      Type: 2
-      NodeType: 1
-      Parent: 36
-      Trigger: 0
-      TriggerText: 
-      Connections: 27000000
-    - ID: 39
-      Size:
-        serializedVersion: 2
-        x: 1074
-        y: 658
-        width: 150
-        height: 125
-      Text: 
-      Type: 1
-      NodeType: 1
-      Parent: 38
-      Trigger: 0
-      TriggerText: 
-      Connections: 22000000
-    - ID: 40
-      Size:
-        serializedVersion: 2
-        x: 1387
-        y: 102
-        width: 150
-        height: 125
-      Text: Navigation system ready.
-      Type: 1
-      NodeType: 1
-      Parent: 34
-      Trigger: 0
-      TriggerText: 
-      Connections: 290000002a000000
-    - ID: 41
-      Size:
-        serializedVersion: 2
-        x: 1547
-        y: 102
-        width: 150
-        height: 125
-      Text: Engineering?
-      Type: 2
-      NodeType: 1
-      Parent: 40
-      Trigger: 0
-      TriggerText: 
-      Connections: 2e000000
-    - ID: 42
-      Size:
-        serializedVersion: 2
-        x: 1382
-        y: 240
-        width: 150
-        height: 125
-      Text: What does the nav system do?
-      Type: 2
-      NodeType: 1
-      Parent: 40
-      Trigger: 0
-      TriggerText: 
-      Connections: 2b000000
-    - ID: 43
-      Size:
-        serializedVersion: 2
-        x: 1383
-        y: 386
-        width: 150
-        height: 125
-      Text: It charts the area around the ship for more precise flying.
-      Type: 1
-      NodeType: 1
-      Parent: 42
-      Trigger: 0
-      TriggerText: 
-      Connections: 2c000000
-    - ID: 44
-      Size:
-        serializedVersion: 2
-        x: 1381
-        y: 523
-        width: 150
-        height: 125
-      Text: Thank you navigator
-      Type: 2
-      NodeType: 1
-      Parent: 43
-      Trigger: 0
-      TriggerText: 
-      Connections: 2d000000
-    - ID: 45
-      Size:
-        serializedVersion: 2
-        x: 1380
-        y: 658
-        width: 150
-        height: 125
-      Text: 
-      Type: 1
-      NodeType: 1
-      Parent: 44
-      Trigger: 0
-      TriggerText: 
-      Connections: 29000000
-    - ID: 46
-      Size:
-        serializedVersion: 2
-        x: 1707
-        y: 102
-        width: 150
-        height: 125
-      Text: Engineering, standing by.
-      Type: 1
-      NodeType: 1
-      Parent: 41
-      Trigger: 0
-      TriggerText: 
-      Connections: 2f00000030000000
-    - ID: 47
-      Size:
-        serializedVersion: 2
-        x: 1867
-        y: 102
-        width: 150
-        height: 125
-      Text: How are the weapon systems?
-      Type: 2
-      NodeType: 1
-      Parent: 46
-      Trigger: 0
-      TriggerText: 
-      Connections: 34000000
-    - ID: 48
-      Size:
-        serializedVersion: 2
-        x: 1707
-        y: 240
-        width: 150
-        height: 125
-      Text: What is engineering's role?
-      Type: 2
-      NodeType: 1
-      Parent: 46
-      Trigger: 0
-      TriggerText: 
-      Connections: 31000000
-    - ID: 49
-      Size:
-        serializedVersion: 2
-        x: 1708
-        y: 380
-        width: 150
-        height: 125
-      Text: Engineering's role is to make sure the ship's system works.
-      Type: 1
-      NodeType: 1
-      Parent: 48
-      Trigger: 0
-      TriggerText: 
-      Connections: 32000000
-    - ID: 50
-      Size:
-        serializedVersion: 2
-        x: 1705
-        y: 521
-        width: 150
-        height: 125
-      Text: Thank you Chief Engineer
-      Type: 2
-      NodeType: 1
-      Parent: 49
-      Trigger: 0
-      TriggerText: 
-      Connections: 33000000
-    - ID: 51
-      Size:
-        serializedVersion: 2
-        x: 1705
-        y: 660
-        width: 150
-        height: 125
-      Text: 
-      Type: 1
-      NodeType: 1
-      Parent: 50
-      Trigger: 0
-      TriggerText: 
-      Connections: 2f000000
-    - ID: 52
-      Size:
-        serializedVersion: 2
-        x: 2027
-        y: 102
-        width: 150
-        height: 125
-      Text: Tactical suite, activated.
-      Type: 1
-      NodeType: 1
-      Parent: 47
-      Trigger: 0
-      TriggerText: 
-      Connections: 3500000036000000
-    - ID: 53
-      Size:
-        serializedVersion: 2
-        x: 2187
-        y: 102
-        width: 150
-        height: 125
-      Text: Chief Science Officer, how are things?
-      Type: 2
-      NodeType: 1
-      Parent: 52
-      Trigger: 0
-      TriggerText: 
-      Connections: 3a000000
-    - ID: 54
-      Size:
-        serializedVersion: 2
-        x: 2028
-        y: 241
-        width: 150
-        height: 125
-      Text: What does the tactical suite do?
-      Type: 2
-      NodeType: 1
-      Parent: 52
-      Trigger: 0
-      TriggerText: 
-      Connections: 37000000
-    - ID: 55
-      Size:
-        serializedVersion: 2
-        x: 2030
-        y: 377
-        width: 150
-        height: 125
-      Text: It finds and locks our targets as well as fire and manage our weapons.
-      Type: 1
-      NodeType: 1
-      Parent: 54
-      Trigger: 0
-      TriggerText: 
-      Connections: 38000000
-    - ID: 56
-      Size:
-        serializedVersion: 2
-        x: 2032
-        y: 520
-        width: 150
-        height: 125
-      Text: Thank you Chief Tactical Officer
-      Type: 2
-      NodeType: 1
-      Parent: 55
-      Trigger: 0
-      TriggerText: 
-      Connections: 39000000
-    - ID: 57
-      Size:
-        serializedVersion: 2
-        x: 2031
-        y: 660
-        width: 150
-        height: 125
-      Text: 
-      Type: 1
-      NodeType: 1
-      Parent: 56
-      Trigger: 0
-      TriggerText: 
-      Connections: 35000000
-    - ID: 58
-      Size:
-        serializedVersion: 2
-        x: 2347
-        y: 102
-        width: 150
-        height: 125
-      Text: Science and Medical Bays, standing by.
-      Type: 1
-      NodeType: 1
-      Parent: 53
-      Trigger: 0
-      TriggerText: 
-      Connections: 3b0000003c0000003d000000
-    - ID: 59
-      Size:
-        serializedVersion: 2
-        x: 2507
-        y: 102
-        width: 150
-        height: 125
-      Text: Is that everyone?
-      Type: 2
-      NodeType: 1
-      Parent: 58
-      Trigger: 0
-      TriggerText: 
-      Connections: 44000000
-    - ID: 60
-      Size:
-        serializedVersion: 2
-        x: 2263
-        y: 244
-        width: 150
-        height: 125
-      Text: What does the Science Bay do?
-      Type: 2
-      NodeType: 1
-      Parent: 58
-      Trigger: 0
-      TriggerText: 
-      Connections: 3e000000
-    - ID: 61
-      Size:
-        serializedVersion: 2
-        x: 2510
-        y: 261
-        width: 150
-        height: 125
-      Text: What does the Medical Bay do?
-      Type: 2
-      NodeType: 1
-      Parent: 58
-      Trigger: 0
-      TriggerText: 
-      Connections: 3f000000
-    - ID: 62
-      Size:
-        serializedVersion: 2
-        x: 2261
-        y: 389
-        width: 150
-        height: 125
-      Text: The science bay takes an in depth telemetry reading of everything around
-        us.
-      Type: 0
-      NodeType: 1
-      Parent: 60
-      Trigger: 0
-      TriggerText: 
-      Connections: 40000000
-    - ID: 63
-      Size:
-        serializedVersion: 2
-        x: 2508
-        y: 414
-        width: 150
-        height: 125
-      Text: We take in everyone on board whom has been injured during our engagements.
-      Type: 1
-      NodeType: 1
-      Parent: 61
-      Trigger: 0
-      TriggerText: 
-      Connections: 420000003c000000
-    - ID: 64
-      Size:
-        serializedVersion: 2
-        x: 2261
-        y: 527
-        width: 150
-        height: 125
-      Text: After analyzing the readings you can read chemical compunds of weapons
-        used and atomic level materials of the enemy's hull.
-      Type: 1
-      NodeType: 1
-      Parent: 62
-      Trigger: 0
-      TriggerText: 
-      Connections: 420000003d000000
-    - ID: 66
-      Size:
-        serializedVersion: 2
-        x: 2446
-        y: 660
-        width: 150
-        height: 125
-      Text: Thanks Chief Science Officere
-      Type: 2
-      NodeType: 1
-      Parent: 64
-      Trigger: 0
-      TriggerText: 
-      Connections: 43000000
-    - ID: 67
-      Size:
-        serializedVersion: 2
-        x: 2264
-        y: 659
-        width: 150
-        height: 125
-      Text: 
-      Type: 1
-      NodeType: 1
-      Parent: 66
-      Trigger: 0
-      TriggerText: 
-      Connections: 3b000000
-    - ID: 68
-      Size:
-        serializedVersion: 2
-        x: 2667
-        y: 102
-        width: 150
-        height: 125
-      Text: All stations ready ma'am.
-      Type: 1
-      NodeType: 1
-      Parent: 59
-      Trigger: 0
-      TriggerText: 
-      Connections: 4500000046000000
-    - ID: 69
-      Size:
-        serializedVersion: 2
-        x: 2828
-        y: 103
-        width: 150
-        height: 125
-      Text: Prepare for FTL jump
-      Type: 2
-      NodeType: 1
-      Parent: 68
-      Trigger: 0
-      TriggerText: 
-      Connections: 4c000000
-    - ID: 70
-      Size:
-        serializedVersion: 2
-        x: 2670
-        y: 255
-        width: 150
-        height: 125
-      Text: What was our mission again?
-      Type: 2
-      NodeType: 1
-      Parent: 68
-      Trigger: 0
-      TriggerText: 
-      Connections: 47000000
-    - ID: 71
-      Size:
-        serializedVersion: 2
-        x: 2671
-        y: 405
-        width: 150
-        height: 125
-      Text: Our mission is to rendezvous with the Uhrgane Confederation near the Elorden
-        homeworld.
-      Type: 0
-      NodeType: 1
-      Parent: 70
-      Trigger: 0
-      TriggerText: 
-      Connections: 48000000
-    - ID: 72
-      Size:
-        serializedVersion: 2
-        x: 2670
-        y: 545
-        width: 150
-        height: 125
-      Text: Their home planet was taken over by the Veludens. We need to for a coalition
-        to liberate their home planet.
-      Type: 0
-      NodeType: 1
-      Parent: 71
-      Trigger: 0
-      TriggerText: 
-      Connections: 49000000
-    - ID: 73
-      Size:
-        serializedVersion: 2
-        x: 2599
-        y: 674
-        width: 150
-        height: 125
-      Text: By liberating their home planet we can begin peace and alliance talks
-        between our Earth Republic and the Uhrgane Confederation.
-      Type: 1
-      NodeType: 1
-      Parent: 72
-      Trigger: 0
-      TriggerText: 
-      Connections: 4a00000046000000
-    - ID: 74
-      Size:
-        serializedVersion: 2
-        x: 2598
-        y: 820
-        width: 150
-        height: 125
-      Text: Understood
-      Type: 2
-      NodeType: 1
-      Parent: 73
-      Trigger: 0
-      TriggerText: 
-      Connections: 4b000000
-    - ID: 75
-      Size:
-        serializedVersion: 2
-        x: 2600
-        y: 955
-        width: 150
-        height: 125
-      Text: 
-      Type: 1
-      NodeType: 1
-      Parent: 74
-      Trigger: 0
-      TriggerText: 
-      Connections: 45000000
-    - ID: 76
-      Size:
-        serializedVersion: 2
-        x: 2832
-        y: 257
-        width: 150
-        height: 125
-      Text: Acquiring jump vector
-      Type: 0
-      NodeType: 1
-      Parent: 69
-      Trigger: 0
-      TriggerText: 
-      Connections: 4d000000
-    - ID: 77
-      Size:
-        serializedVersion: 2
-        x: 2833
-        y: 391
-        width: 150
-        height: 125
-      Text: Prepare for FTL jump in 3...
-      Type: 0
-      NodeType: 1
-      Parent: 76
-      Trigger: 0
-      TriggerText: 
-      Connections: 4e000000
-    - ID: 78
-      Size:
-        serializedVersion: 2
-        x: 2833
-        y: 534
-        width: 150
-        height: 125
-      Text: 2...
-      Type: 0
-      NodeType: 1
-      Parent: 77
-      Trigger: 0
-      TriggerText: 
-      Connections: 4f000000
-    - ID: 79
-      Size:
-        serializedVersion: 2
-        x: 2835
-        y: 672
-        width: 150
-        height: 125
-      Text: 1...
-      Type: 0
-      NodeType: 2
-      Parent: 78
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 80
-      Size:
-        serializedVersion: 2
-        x: 261
-        y: 100
-        width: 150
-        height: 125
-      Text: Welcome to the USS Elusive Empress!
-      Type: 0
-      NodeType: 1
-      Parent: 23
-      Trigger: 1
-      TriggerText: XOTalk
-      Connections: 18000000
-  - CurrentId: 47
-    NewWindowOpen: 0
-    FirstWindow:
-      ID: 0
-      Size:
-        serializedVersion: 2
-        x: 54
-        y: 155
-        width: 150
-        height: 125
-      Text: Captain we've arrived to the rendezvous with the Elordens of the Uhrgane
-        Confederation.
-      Type: 0
-      NodeType: 0
-      Parent: -1
-      Trigger: 0
-      TriggerText: 
-      Connections: 01000000
-    Windows:
-    - ID: 0
-      Size:
-        serializedVersion: 2
-        x: 54
-        y: 155
-        width: 150
-        height: 125
-      Text: Captain we've arrived to the rendezvous with the Elordens of the Uhrgane
-        Confederation.
-      Type: 0
-      NodeType: 0
-      Parent: -1
-      Trigger: 0
-      TriggerText: 
-      Connections: 01000000
-    - ID: 1
-      Size:
-        serializedVersion: 2
-        x: 214
-        y: 155
-        width: 150
-        height: 125
-      Text: Do we proceed with the mission?
-      Type: 1
-      NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 020000000300000005000000
-    - ID: 2
-      Size:
-        serializedVersion: 2
-        x: 374
-        y: 155
-        width: 150
-        height: 125
-      Text: Proceed. All ship systems set to high alert.
-      Type: 2
-      NodeType: 1
-      Parent: 1
-      Trigger: 0
-      TriggerText: 
-      Connections: 04000000
-    - ID: 3
-      Size:
-        serializedVersion: 2
-        x: 53
-        y: 300
-        width: 150
-        height: 125
-      Text: What do you mean?
-      Type: 2
-      NodeType: 1
-      Parent: 1
-      Trigger: 0
-      TriggerText: 
-      Connections: 06000000
-    - ID: 4
-      Size:
-        serializedVersion: 2
-        x: 383
-        y: 302
-        width: 150
-        height: 125
-      Text: 
-      Type: 1
-      NodeType: 1
-      Parent: 2
-      Trigger: 0
-      TriggerText: 
-      Connections: 0c000000
-    - ID: 5
-      Size:
-        serializedVersion: 2
-        x: 225
-        y: 301
-        width: 150
-        height: 125
-      Text: Attack the Elordens!
-      Type: 2
-      NodeType: 1
-      Parent: 1
-      Trigger: 0
-      TriggerText: 
-      Connections: 0a000000
-    - ID: 6
-      Size:
-        serializedVersion: 2
-        x: 53
-        y: 436
-        width: 150
-        height: 125
-      Text: We have a choice, we can wipe out the Elordens, giving the Uhrgane Confederation
-        a hhuge blow or...
-      Type: 0
-      NodeType: 1
-      Parent: 3
-      Trigger: 0
-      TriggerText: 
-      Connections: 09000000
-    - ID: 9
-      Size:
-        serializedVersion: 2
-        x: 51
-        y: 577
-        width: 150
-        height: 125
-      Text: We proceed with the mission and take down the Veludens and form an alliance
-        with the Confederation. So...
-      Type: 0
-      NodeType: 1
-      Parent: 6
-      Trigger: 0
-      TriggerText: 
-      Connections: 01000000
-    - ID: 10
-      Size:
-        serializedVersion: 2
-        x: 228
-        y: 442
-        width: 150
-        height: 125
-      Text: Ma'am, this will destroy a potential ally and just create meaningless
-        skirmishes for their territory.
-      Type: 1
-      NodeType: 1
-      Parent: 5
-      Trigger: 0
-      TriggerText: 
-      Connections: 0b0000000d000000
-    - ID: 11
-      Size:
-        serializedVersion: 2
-        x: 222
-        y: 578
-        width: 150
-        height: 125
-      Text: I understand. All ship systems set to high alert. Attack!
-      Type: 2
-      NodeType: 1
-      Parent: 10
-      Trigger: 0
-      TriggerText: 
-      Connections: 2b000000
-    - ID: 12
-      Size:
-        serializedVersion: 2
-        x: 386
-        y: 438
-        width: 150
-        height: 125
-      Text: Communications, get me the Uhrgane field commander.
-      Type: 2
-      NodeType: 1
-      Parent: 4
-      Trigger: 0
-      TriggerText: 
-      Connections: 0e000000
-    - ID: 13
-      Size:
-        serializedVersion: 2
-        x: 56
-        y: 720
-        width: 150
-        height: 125
-      Text: Let me rethink this...
-      Type: 2
-      NodeType: 1
-      Parent: 10
-      Trigger: 0
-      TriggerText: 
-      Connections: 01000000
-    - ID: 14
-      Size:
-        serializedVersion: 2
-        x: 537
-        y: 153
-        width: 150
-        height: 125
-      Text: Captain Vrataski, you are late...
-      Type: 1
-      NodeType: 1
-      Parent: 12
-      Trigger: 1
-      TriggerText: AlienTalk
-      Connections: 10000000
-    - ID: 16
-      Size:
-        serializedVersion: 2
-        x: 547
-        y: 437
-        width: 150
-        height: 125
-      Text: Sorry commander, we were finalizing our plans
-      Type: 2
-      NodeType: 1
-      Parent: 15
+      Parent: 14
       Trigger: 0
       TriggerText: 
       Connections: 11000000
     - ID: 17
       Size:
         serializedVersion: 2
-        x: 550
-        y: 573
+        x: 821
+        y: 402
         width: 150
         height: 125
-      Text: 
+      Text: For communicating with other ships.
       Type: 1
       NodeType: 1
       Parent: 16
@@ -3310,11 +2915,11 @@ MonoBehaviour:
     - ID: 18
       Size:
         serializedVersion: 2
-        x: 549
-        y: 711
+        x: 816
+        y: 548
         width: 150
         height: 125
-      Text: Form up your fleet
+      Text: Thank you Communications Officer
       Type: 2
       NodeType: 1
       Parent: 17
@@ -3324,8 +2929,8 @@ MonoBehaviour:
     - ID: 19
       Size:
         serializedVersion: 2
-        x: 552
-        y: 844
+        x: 821
+        y: 684
         width: 150
         height: 125
       Text: 
@@ -3334,129 +2939,142 @@ MonoBehaviour:
       Parent: 18
       Trigger: 0
       TriggerText: 
-      Connections: 14000000
+      Connections: 0f000000
     - ID: 20
       Size:
         serializedVersion: 2
-        x: 551
-        y: 977
+        x: 1234
+        y: 108
         width: 150
         height: 125
-      Text: We will open with a surprise attack fomr our main guns
-      Type: 2
+      Text: Navigation systems ready.
+      Type: 1
       NodeType: 1
-      Parent: 19
+      Parent: 15
       Trigger: 0
       TriggerText: 
-      Connections: 15000000
+      Connections: 1500000016000000
     - ID: 21
       Size:
         serializedVersion: 2
-        x: 696
-        y: 154
+        x: 1394
+        y: 108
         width: 150
         height: 125
-      Text: You realize how heavily fortified the Veludens have organized around our
-        planet?
-      Type: 0
+      Text: Engineering?
+      Type: 2
       NodeType: 1
       Parent: 20
-      Trigger: 1
-      TriggerText: AlienTalk
-      Connections: 16000000
+      Trigger: 0
+      TriggerText: 
+      Connections: 1a000000
     - ID: 22
       Size:
         serializedVersion: 2
-        x: 699
-        y: 299
+        x: 1227
+        y: 253
         width: 150
         height: 125
-      Text: Even your main guns won't be enough.
-      Type: 0
+      Text: What does the nav system do?
+      Type: 2
       NodeType: 1
-      Parent: 21
-      Trigger: 1
-      TriggerText: AlienTalk
+      Parent: 20
+      Trigger: 0
+      TriggerText: 
       Connections: 17000000
     - ID: 23
       Size:
         serializedVersion: 2
-        x: 702
-        y: 434
+        x: 1227
+        y: 397
         width: 150
         height: 125
-      Text: Why did you Humans only send one ship?
+      Text: It charts the area around the ship for more precise flying
       Type: 1
       NodeType: 1
       Parent: 22
-      Trigger: 1
-      TriggerText: AlienTalk
+      Trigger: 0
+      TriggerText: 
+      Connections: 18000000
+    - ID: 24
+      Size:
+        serializedVersion: 2
+        x: 1228
+        y: 542
+        width: 150
+        height: 125
+      Text: Thank you Navigator
+      Type: 2
+      NodeType: 1
+      Parent: 23
+      Trigger: 0
+      TriggerText: 
       Connections: 19000000
     - ID: 25
       Size:
         serializedVersion: 2
-        x: 709
-        y: 712
-        width: 150
-        height: 125
-      Text: We sent a recon squad ahead of our FTL jump.
-      Type: 2
-      NodeType: 1
-      Parent: 24
-      Trigger: 0
-      TriggerText: 
-      Connections: 1a000000
-    - ID: 26
-      Size:
-        serializedVersion: 2
-        x: 714
-        y: 850
+        x: 1228
+        y: 676
         width: 150
         height: 125
       Text: 
       Type: 1
       NodeType: 1
-      Parent: 25
+      Parent: 24
       Trigger: 0
       TriggerText: 
-      Connections: 1b000000
+      Connections: 15000000
+    - ID: 26
+      Size:
+        serializedVersion: 2
+        x: 1554
+        y: 108
+        width: 150
+        height: 125
+      Text: Engineering, standing by.
+      Type: 1
+      NodeType: 1
+      Parent: 21
+      Trigger: 0
+      TriggerText: 
+      Connections: 1b0000001c000000
     - ID: 27
       Size:
         serializedVersion: 2
-        x: 714
-        y: 988
+        x: 1714
+        y: 108
         width: 150
         height: 125
-      Text: We target painted their capitol ship.
+      Text: How are the weapon systems?
       Type: 2
       NodeType: 1
       Parent: 26
       Trigger: 0
       TriggerText: 
-      Connections: 1c000000
+      Connections: 20000000
     - ID: 28
       Size:
         serializedVersion: 2
-        x: 717
-        y: 1119
+        x: 1546
+        y: 250
         width: 150
         height: 125
-      Text: 
-      Type: 1
+      Text: What is engineering's role?
+      Type: 2
       NodeType: 1
-      Parent: 27
+      Parent: 26
       Trigger: 0
       TriggerText: 
       Connections: 1d000000
     - ID: 29
       Size:
         serializedVersion: 2
-        x: 717
-        y: 1252
+        x: 1543
+        y: 397
         width: 150
         height: 125
-      Text: We will take it out with our opening shot.
-      Type: 2
+      Text: Engineering's role is to make sure the ship's system works.
+      Type: 1
       NodeType: 1
       Parent: 28
       Trigger: 0
@@ -3465,12 +3083,12 @@ MonoBehaviour:
     - ID: 30
       Size:
         serializedVersion: 2
-        x: 717
-        y: 1386
+        x: 1541
+        y: 542
         width: 150
         height: 125
-      Text: 
-      Type: 1
+      Text: Thank you Chief Engineer
+      Type: 2
       NodeType: 1
       Parent: 29
       Trigger: 0
@@ -3479,99 +3097,81 @@ MonoBehaviour:
     - ID: 31
       Size:
         serializedVersion: 2
-        x: 717
-        y: 1529
-        width: 150
-        height: 125
-      Text: Without their leaders, the Veluden's lack of tactical aptitude will make
-        them easy prey
-      Type: 2
-      NodeType: 1
-      Parent: 30
-      Trigger: 0
-      TriggerText: 
-      Connections: 20000000
-    - ID: 32
-      Size:
-        serializedVersion: 2
-        x: 864
-        y: 155
-        width: 150
-        height: 125
-      Text: We were not informed of a recon squad nor did we even see one, how are
-        we to trust you when you don't provide us with information?
-      Type: 1
-      NodeType: 1
-      Parent: 31
-      Trigger: 1
-      TriggerText: AlienTalk
-      Connections: 21000000
-    - ID: 33
-      Size:
-        serializedVersion: 2
-        x: 870
-        y: 295
-        width: 150
-        height: 125
-      Text: You may have some of the best stealth technology, but my team has the
-        best skills.
-      Type: 2
-      NodeType: 1
-      Parent: 32
-      Trigger: 0
-      TriggerText: 
-      Connections: 22000000
-    - ID: 34
-      Size:
-        serializedVersion: 2
-        x: 873
-        y: 431
+        x: 1542
+        y: 679
         width: 150
         height: 125
       Text: 
       Type: 1
       NodeType: 1
-      Parent: 33
+      Parent: 30
       Trigger: 0
       TriggerText: 
-      Connections: 23000000
+      Connections: 1b000000
+    - ID: 32
+      Size:
+        serializedVersion: 2
+        x: 1874
+        y: 108
+        width: 150
+        height: 125
+      Text: Tactical suite, activated.
+      Type: 1
+      NodeType: 1
+      Parent: 27
+      Trigger: 0
+      TriggerText: 
+      Connections: 2100000023000000
+    - ID: 33
+      Size:
+        serializedVersion: 2
+        x: 2034
+        y: 108
+        width: 150
+        height: 125
+      Text: Chief Science Officer, how are your stations?
+      Type: 2
+      NodeType: 1
+      Parent: 32
+      Trigger: 0
+      TriggerText: 
+      Connections: 27000000
     - ID: 35
       Size:
         serializedVersion: 2
-        x: 874
-        y: 571
+        x: 1876
+        y: 251
         width: 150
         height: 125
-      Text: They knew how to counter your sensors and pass for a Veluden
+      Text: What does the tactical suite do?
       Type: 2
       NodeType: 1
-      Parent: 34
+      Parent: 32
       Trigger: 0
       TriggerText: 
       Connections: 24000000
     - ID: 36
       Size:
         serializedVersion: 2
-        x: 1033
-        y: 156
+        x: 1885
+        y: 409
         width: 150
         height: 125
-      Text: Very well, let's end our argument, the more time we waste talking, the
-        more survivors die on our planet...
+      Text: It finds and locks our targets as well as fire and manage our weapons.
       Type: 1
       NodeType: 1
       Parent: 35
-      Trigger: 1
-      TriggerText: AlienTalk
+      Trigger: 0
+      TriggerText: 
       Connections: 25000000
     - ID: 37
       Size:
         serializedVersion: 2
-        x: 1036
-        y: 297
+        x: 1884
+        y: 559
         width: 150
         height: 125
-      Text: All hands to battle stations!
+      Text: Thank you Chief Tactical Officer
       Type: 2
       NodeType: 1
       Parent: 36
@@ -3581,135 +3181,318 @@ MonoBehaviour:
     - ID: 38
       Size:
         serializedVersion: 2
-        x: 1042
-        y: 434
+        x: 1882
+        y: 707
         width: 150
         height: 125
       Text: 
       Type: 1
       NodeType: 1
       Parent: 37
-      Trigger: 1
-      TriggerText: AlienEnd
-      Connections: 27000000
+      Trigger: 0
+      TriggerText: 
+      Connections: 21000000
     - ID: 39
       Size:
         serializedVersion: 2
-        x: 1042
-        y: 575
+        x: 2194
+        y: 108
         width: 150
         height: 125
-      Text: Charge the main guns!
-      Type: 2
+      Text: Science and Medical Bays, standing by.
+      Type: 1
       NodeType: 1
-      Parent: 38
+      Parent: 33
       Trigger: 0
       TriggerText: 
-      Connections: 28000000
+      Connections: 28000000290000002a000000
     - ID: 40
       Size:
         serializedVersion: 2
-        x: 1044
-        y: 708
+        x: 2354
+        y: 108
+        width: 150
+        height: 125
+      Text: Is that everyone?
+      Type: 2
+      NodeType: 1
+      Parent: 39
+      Trigger: 0
+      TriggerText: 
+      Connections: 31000000
+    - ID: 41
+      Size:
+        serializedVersion: 2
+        x: 2101
+        y: 253
+        width: 150
+        height: 125
+      Text: What does Science Bay do?
+      Type: 2
+      NodeType: 1
+      Parent: 39
+      Trigger: 0
+      TriggerText: 
+      Connections: 2b000000
+    - ID: 42
+      Size:
+        serializedVersion: 2
+        x: 2275
+        y: 261
+        width: 150
+        height: 125
+      Text: What does Medical Bay do?
+      Type: 2
+      NodeType: 1
+      Parent: 39
+      Trigger: 0
+      TriggerText: 
+      Connections: 2f000000
+    - ID: 43
+      Size:
+        serializedVersion: 2
+        x: 2099
+        y: 403
+        width: 150
+        height: 125
+      Text: The science bay takes an in-depth reading of eveything around us.
+      Type: 0
+      NodeType: 1
+      Parent: 41
+      Trigger: 0
+      TriggerText: 
+      Connections: 2c000000
+    - ID: 44
+      Size:
+        serializedVersion: 2
+        x: 2101
+        y: 540
+        width: 150
+        height: 125
+      Text: After analyzing the readings you can read chemical compounds of weapons
+        used and atomic level materials of the enermy's hull
+      Type: 1
+      NodeType: 1
+      Parent: 43
+      Trigger: 0
+      TriggerText: 
+      Connections: 2d0000002a000000
+    - ID: 45
+      Size:
+        serializedVersion: 2
+        x: 2092
+        y: 721
+        width: 150
+        height: 125
+      Text: Thank you Chief Science Officer
+      Type: 2
+      NodeType: 1
+      Parent: 44
+      Trigger: 0
+      TriggerText: 
+      Connections: 30000000
+    - ID: 47
+      Size:
+        serializedVersion: 2
+        x: 2264
+        y: 489
+        width: 150
+        height: 125
+      Text: We take in everyone on boards whom has been injured during our engagements
+      Type: 1
+      NodeType: 1
+      Parent: 42
+      Trigger: 0
+      TriggerText: 
+      Connections: 2d00000029000000
+    - ID: 48
+      Size:
+        serializedVersion: 2
+        x: 2292
+        y: 648
         width: 150
         height: 125
       Text: 
       Type: 1
       NodeType: 1
-      Parent: 39
+      Parent: 45
       Trigger: 0
       TriggerText: 
-      Connections: 29000000
-    - ID: 41
+      Connections: 28000000
+    - ID: 49
       Size:
         serializedVersion: 2
-        x: 1047
-        y: 851
+        x: 2514
+        y: 108
         width: 150
         height: 125
-      Text: Helm, accelerate to attack speed!
-      Type: 2
+      Text: All stations ready ma'am.
+      Type: 1
       NodeType: 1
       Parent: 40
       Trigger: 0
       TriggerText: 
-      Connections: 2a000000
-    - ID: 42
+      Connections: 3200000033000000
+    - ID: 50
       Size:
         serializedVersion: 2
-        x: 1052
-        y: 983
+        x: 2674
+        y: 108
         width: 150
         height: 125
-      Text: Yes ma'am!
-      Type: 0
+      Text: Prepare for FTL jump
+      Type: 2
       NodeType: 1
-      Parent: 41
-      Trigger: 1
-      TriggerText: StartMove,5,10,1,0,1
-      Connections: 2d000000
-    - ID: 43
-      Size:
-        serializedVersion: 2
-        x: 221
-        y: 722
-        width: 150
-        height: 125
-      Text: Yes ma'am!
-      Type: 0
-      NodeType: 2
-      Parent: 11
+      Parent: 49
       Trigger: 0
       TriggerText: 
-      Connections: 
-    - ID: 44
+      Connections: 3a000000
+    - ID: 51
       Size:
         serializedVersion: 2
-        x: 1585
-        y: 986
+        x: 2509
+        y: 252
+        width: 150
+        height: 125
+      Text: What was our mission again?
+      Type: 2
+      NodeType: 1
+      Parent: 49
+      Trigger: 0
+      TriggerText: 
+      Connections: 34000000
+    - ID: 52
+      Size:
+        serializedVersion: 2
+        x: 2512
+        y: 397
+        width: 150
+        height: 125
+      Text: Our mission is to rendezvous with the Uhrgane Confederation near the Elorden
+        homeworld.
+      Type: 0
+      NodeType: 1
+      Parent: 51
+      Trigger: 0
+      TriggerText: 
+      Connections: 35000000
+    - ID: 53
+      Size:
+        serializedVersion: 2
+        x: 2515
+        y: 542
+        width: 150
+        height: 125
+      Text: Their home planet was taken over by the Veludens. We need form a coalition
+        to liberate their home planet
+      Type: 0
+      NodeType: 1
+      Parent: 52
+      Trigger: 0
+      TriggerText: 
+      Connections: 36000000
+    - ID: 54
+      Size:
+        serializedVersion: 2
+        x: 2327
+        y: 783
+        width: 150
+        height: 125
+      Text: By liberating their home planet we can beging peace and alliance talks
+        between our Earth Republic and the Uhrgane Confederation.
+      Type: 1
+      NodeType: 1
+      Parent: 53
+      Trigger: 0
+      TriggerText: 
+      Connections: 3700000033000000
+    - ID: 55
+      Size:
+        serializedVersion: 2
+        x: 2517
+        y: 697
+        width: 150
+        height: 125
+      Text: Understood
+      Type: 2
+      NodeType: 1
+      Parent: 54
+      Trigger: 0
+      TriggerText: 
+      Connections: 39000000
+    - ID: 57
+      Size:
+        serializedVersion: 2
+        x: 2518
+        y: 840
         width: 150
         height: 125
       Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 55
+      Trigger: 0
+      TriggerText: 
+      Connections: 32000000
+    - ID: 58
+      Size:
+        serializedVersion: 2
+        x: 2834
+        y: 108
+        width: 150
+        height: 125
+      Text: Acquiring jump vector.
+      Type: 0
+      NodeType: 1
+      Parent: 50
+      Trigger: 0
+      TriggerText: 
+      Connections: 3b000000
+    - ID: 59
+      Size:
+        serializedVersion: 2
+        x: 2829
+        y: 259
+        width: 150
+        height: 125
+      Text: Prepare for FTL jump in 3...
+      Type: 0
+      NodeType: 1
+      Parent: 58
+      Trigger: 0
+      TriggerText: 
+      Connections: 3c000000
+    - ID: 60
+      Size:
+        serializedVersion: 2
+        x: 2827
+        y: 405
+        width: 150
+        height: 125
+      Text: 2...
+      Type: 0
+      NodeType: 1
+      Parent: 59
+      Trigger: 0
+      TriggerText: 
+      Connections: 3d000000
+    - ID: 61
+      Size:
+        serializedVersion: 2
+        x: 2824
+        y: 545
+        width: 150
+        height: 125
+      Text: 1...
       Type: 0
       NodeType: 2
-      Parent: 42
-      Trigger: 1
-      TriggerText: EndMove
+      Parent: 60
+      Trigger: 0
+      TriggerText: 
       Connections: 
-    - ID: 45
-      Size:
-        serializedVersion: 2
-        x: 1242
-        y: 987
-        width: 150
-        height: 125
-      Text: Engaging!
-      Type: 0
-      NodeType: 1
-      Parent: 42
-      Trigger: 0
-      TriggerText: 
-      Connections: 2e000000
-    - ID: 46
-      Size:
-        serializedVersion: 2
-        x: 1425
-        y: 986
-        width: 150
-        height: 125
-      Text: 
-      Type: 0
-      NodeType: 1
-      Parent: 45
-      Trigger: 0
-      TriggerText: 
-      Connections: 2c000000
-  CurrentSet: 2
+  CurrentSet: 0
   TabList:
-  - FirstMeeting
-  - TalkAgain
   - Scene1
-  - Scene2
 --- !u!1001 &1028258582
 Prefab:
   m_ObjectHideFlags: 0
@@ -4145,6 +3928,84 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400148, guid: 67da5113231ed4344a831dc134c4f4e3, type: 3}
   m_PrefabInternal: {fileID: 541993043}
+--- !u!1 &1346960185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1503409737448746, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1346960188}
+  - component: {fileID: 1346960187}
+  - component: {fileID: 1346960186}
+  m_Layer: 5
+  m_Name: LeftText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1346960186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114604927708258130, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1346960185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Button
+--- !u!222 &1346960187
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222116599145027260, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1346960185}
+--- !u!224 &1346960188
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224350615838918776, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1346960185}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 372272142}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1360734006
 Prefab:
   m_ObjectHideFlags: 0
@@ -4294,7 +4155,7 @@ RectTransform:
   m_Children:
   - {fileID: 126562276}
   m_Father: {fileID: 468697087}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4404,6 +4265,82 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1373096620}
+--- !u!1 &1386562688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1229844179033372, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1386562691}
+  - component: {fileID: 1386562690}
+  - component: {fileID: 1386562689}
+  m_Layer: 5
+  m_Name: Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1386562689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114565981229924584, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386562688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.025951583, g: 0.734, b: 0.88235295, a: 0.19607843}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1386562690
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222242297811529060, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386562688}
+--- !u!224 &1386562691
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224204341439348742, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386562688}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 60, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 164626265}
+  - {fileID: 372272142}
+  - {fileID: 462833734}
+  - {fileID: 1881592607}
+  m_Father: {fileID: 468697087}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 110}
+  m_SizeDelta: {x: 650, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1423943658
 Prefab:
   m_ObjectHideFlags: 0
@@ -4649,6 +4586,21 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1500144691 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100144, guid: 02bf6d973b5748c43830083a142e7d14, type: 3}
+  m_PrefabInternal: {fileID: 461325873}
+--- !u!114 &1500144693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1500144691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab294f69225063445a3a69774faa5d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1505129731
 Prefab:
   m_ObjectHideFlags: 0
@@ -5133,6 +5085,84 @@ Transform:
   m_Father: {fileID: 352396460}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1676640764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1604369997085318, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1676640767}
+  - component: {fileID: 1676640766}
+  - component: {fileID: 1676640765}
+  m_Layer: 5
+  m_Name: RightText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1676640765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114979034277581112, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1676640764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Button
+--- !u!222 &1676640766
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222270769907670776, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1676640764}
+--- !u!224 &1676640767
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224375307693167160, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1676640764}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 462833734}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1690899894
 GameObject:
   m_ObjectHideFlags: 0
@@ -5409,6 +5439,133 @@ Transform:
   m_PrefabParentObject: {fileID: 1820761120, guid: 34c21f523e72f45509a4e37ed0293c3b,
     type: 2}
   m_PrefabInternal: {fileID: 1492362398}
+--- !u!1 &1881592606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1421127412699710, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1881592607}
+  - component: {fileID: 1881592610}
+  - component: {fileID: 1881592609}
+  - component: {fileID: 1881592608}
+  m_Layer: 5
+  m_Name: MiddleButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1881592607
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224186948160116480, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881592606}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 142110142}
+  m_Father: {fileID: 1386562691}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 35}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1881592608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114620751900038820, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881592606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1881592609}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 468697088}
+        m_MethodName: Choice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1881592609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114710028922580206, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881592606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1881592610
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222136640789459968, guid: 892eba7ef3eb9434eb71d4927792cf5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881592606}
 --- !u!1001 &1886661169
 Prefab:
   m_ObjectHideFlags: 0
@@ -5924,208 +6081,6 @@ Transform:
   m_Father: {fileID: 352396460}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2070016234
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 999006266}
-    m_Modifications:
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.3160019
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.316
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224676159199658200, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1350452765949332, guid: 892eba7ef3eb9434eb71d4927792cf5f, type: 2}
-      propertyPath: m_Name
-      value: DialogueCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 223048235385369484, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 365836834}
-    - target: {fileID: 114568266672271090, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: npc
-      value: 
-      objectReference: {fileID: 1005173625}
-    - target: {fileID: 114565981229924584, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 114565981229924584, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114565981229924584, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_Color.a
-      value: 0.19607843
-      objectReference: {fileID: 0}
-    - target: {fileID: 114565981229924584, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 0.025951583
-      objectReference: {fileID: 0}
-    - target: {fileID: 114565981229924584, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 0.734
-      objectReference: {fileID: 0}
-    - target: {fileID: 114565981229924584, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 0.88235295
-      objectReference: {fileID: 0}
-    - target: {fileID: 114650297408542474, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114650297408542474, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114650297408542474, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224204341439348742, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 650
-      objectReference: {fileID: 0}
-    - target: {fileID: 224827463789940546, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -110
-      objectReference: {fileID: 0}
-    - target: {fileID: 224827463789940546, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -110
-      objectReference: {fileID: 0}
-    - target: {fileID: 224726701751491280, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -110
-      objectReference: {fileID: 0}
-    - target: {fileID: 224726701751491280, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -110
-      objectReference: {fileID: 0}
-    - target: {fileID: 224726701751491280, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -231
-      objectReference: {fileID: 0}
-    - target: {fileID: 224726701751491280, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -231
-      objectReference: {fileID: 0}
-    - target: {fileID: 114568266672271090, guid: 892eba7ef3eb9434eb71d4927792cf5f,
-        type: 2}
-      propertyPath: ship
-      value: 
-      objectReference: {fileID: 385399442}
-    m_RemovedComponents:
-    - {fileID: 114098921557055070, guid: 892eba7ef3eb9434eb71d4927792cf5f, type: 2}
-    - {fileID: 64347232460718306, guid: 892eba7ef3eb9434eb71d4927792cf5f, type: 2}
-    - {fileID: 114186007786648262, guid: 892eba7ef3eb9434eb71d4927792cf5f, type: 2}
-  m_ParentPrefab: {fileID: 100100000, guid: 892eba7ef3eb9434eb71d4927792cf5f, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &2103437514
 Prefab:
   m_ObjectHideFlags: 0

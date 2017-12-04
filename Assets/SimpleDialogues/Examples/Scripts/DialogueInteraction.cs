@@ -46,8 +46,6 @@ public class DialogueInteraction : MonoBehaviour {
 
     public void Choice(int index)
     {
-        if (index == 2 && npc.GetCurrentTree() == "TalkAgain") index = 1;
-
         if (index == 1 && (npc.GetCurrentTree() == "Scene1" || npc.GetCurrentTree() == "Scene2") && npc.GetChoices().Length == 1) index = 0;
         if (index == 2 && (npc.GetCurrentTree() == "Scene1" || npc.GetCurrentTree() == "Scene2") && npc.GetChoices().Length == 2) index = 1;
         if (npc.GetChoices().Length != 0)
@@ -59,13 +57,6 @@ public class DialogueInteraction : MonoBehaviour {
         {
             Progress();
         }
-    }
-
-    public void TalkAgain()
-    {
-        npc.SetTree("TalkAgain");
-        nextEnd = false;
-        Display();
     }
 
     // Custom code
@@ -192,7 +183,6 @@ public class DialogueInteraction : MonoBehaviour {
         if (npcCommand.Contains("Talk"))
         {
             INPCAction npcAction = (INPCAction)actingNPC.GetComponent(typeof(INPCAction));
-            npcAction.setActive();
             npcAction.talk();
         }
         if (npcCommand.Contains("End"))
