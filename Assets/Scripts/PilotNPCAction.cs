@@ -3,9 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SecondOfficerNPCAction : MonoBehaviour, INPCAction {
+public class PilotNPCAction : MonoBehaviour, INPCAction {
 
     private Animator anim;
+
+    public string npcName()
+    {
+        return "Pilot";
+    }
 
     public void setActive()
     {
@@ -20,11 +25,6 @@ public class SecondOfficerNPCAction : MonoBehaviour, INPCAction {
     public void talk()
     {
         anim.SetTrigger("Talk");
-    }
-
-    public string npcName()
-    {
-        return "XO";
     }
 
     public void idle()

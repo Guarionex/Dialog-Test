@@ -1597,6 +1597,21 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67da5113231ed4344a831dc134c4f4e3, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &541993044 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100148, guid: 67da5113231ed4344a831dc134c4f4e3, type: 3}
+  m_PrefabInternal: {fileID: 541993043}
+--- !u!114 &541993045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 541993044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b696672b62bba74b8909fa5b3d7e7fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &580794446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2144,6 +2159,21 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 4df264a3e06831743a174ef93236bb42, type: 3}
   m_PrefabInternal: {fileID: 831271956}
+--- !u!1 &844859200 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100144, guid: 8d010e8d89fc0a7438f5d2c5fe0b5258, type: 3}
+  m_PrefabInternal: {fileID: 792162717}
+--- !u!114 &844859202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 844859200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc119b64ca5ecd4ab8a2268e8bf6a1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &863535482
 Prefab:
   m_ObjectHideFlags: 0
@@ -2783,8 +2813,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 4
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: PilotTalk
       Connections: 090000000a000000
     - ID: 9
       Size:
@@ -2825,8 +2855,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 10
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: PilotTalk
       Connections: 0c000000
     - ID: 12
       Size:
@@ -2867,8 +2897,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 9
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: CommsTalk
       Connections: 0f00000010000000
     - ID: 15
       Size:
@@ -2909,8 +2939,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 16
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: CommsTalk
       Connections: 12000000
     - ID: 18
       Size:
@@ -2951,8 +2981,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 15
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: NavTalk
       Connections: 1500000016000000
     - ID: 21
       Size:
@@ -2993,8 +3023,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 22
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: NavTalk
       Connections: 18000000
     - ID: 24
       Size:
@@ -3035,8 +3065,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 21
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: EngineerTalk
       Connections: 1b0000001c000000
     - ID: 27
       Size:
@@ -3077,8 +3107,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 28
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: EngineerTalk
       Connections: 1e000000
     - ID: 30
       Size:
@@ -3105,8 +3135,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 30
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: EngineerIdle
       Connections: 1b000000
     - ID: 32
       Size:
@@ -3119,8 +3149,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 27
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: TacticalTalk,EngineerIdle
       Connections: 2100000023000000
     - ID: 33
       Size:
@@ -3161,8 +3191,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 35
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: TacticalTalk
       Connections: 25000000
     - ID: 37
       Size:
@@ -3203,8 +3233,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 33
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: ScienceTalk
       Connections: 28000000290000002a000000
     - ID: 40
       Size:
@@ -3259,8 +3289,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 1
       Parent: 41
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: ScienceTalk
       Connections: 2c000000
     - ID: 44
       Size:
@@ -3274,8 +3304,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 43
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: ScienceTalk
       Connections: 2d0000002a000000
     - ID: 45
       Size:
@@ -3302,8 +3332,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 42
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: ScienceTalk
       Connections: 2d00000029000000
     - ID: 48
       Size:
@@ -3330,8 +3360,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 40
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: XOTalk
       Connections: 3200000033000000
     - ID: 50
       Size:
@@ -3373,8 +3403,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 1
       Parent: 51
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: XOTalk
       Connections: 35000000
     - ID: 53
       Size:
@@ -3388,8 +3418,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 1
       Parent: 52
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: XOTalk
       Connections: 36000000
     - ID: 54
       Size:
@@ -3403,8 +3433,8 @@ MonoBehaviour:
       Type: 1
       NodeType: 1
       Parent: 53
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: XOTalk
       Connections: 3700000033000000
     - ID: 55
       Size:
@@ -3445,8 +3475,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 1
       Parent: 50
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: PilotTalk
       Connections: 3b000000
     - ID: 59
       Size:
@@ -3459,8 +3489,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 1
       Parent: 58
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: PilotTalk
       Connections: 3c000000
     - ID: 60
       Size:
@@ -3473,8 +3503,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 1
       Parent: 59
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: PilotTalk
       Connections: 3d000000
     - ID: 61
       Size:
@@ -3487,8 +3517,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 60
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: PilotTalk
       Connections: 
   CurrentSet: 0
   TabList:
@@ -3928,6 +3958,21 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400148, guid: 67da5113231ed4344a831dc134c4f4e3, type: 3}
   m_PrefabInternal: {fileID: 541993043}
+--- !u!1 &1340343555 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100004, guid: f8a7efe4a1b41ab4e82793ca0c747efc, type: 3}
+  m_PrefabInternal: {fileID: 1371042788}
+--- !u!114 &1340343556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340343555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcea59ea1a7040f4c857dd1f6f771ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1346960185
 GameObject:
   m_ObjectHideFlags: 0
@@ -5163,6 +5208,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1678190589 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100004, guid: 9ade8ad738947324a9be2e0e2132f584, type: 3}
+  m_PrefabInternal: {fileID: 1629386919}
+--- !u!114 &1678190590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1678190589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f41b6aecaf360f4ea5b94e898838a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkingTarget: {fileID: 999006266}
+  rotationSpeed: 1
 --- !u!1 &1690899894
 GameObject:
   m_ObjectHideFlags: 0
@@ -5372,6 +5434,23 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1779344055 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100004, guid: 4435cf58bc2aba4409d6db79a324b36c, type: 3}
+  m_PrefabInternal: {fileID: 863535482}
+--- !u!114 &1779344056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1779344055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ce5c65a449caf429587663a1562c60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkingTarget: {fileID: 999006266}
+  rotationSpeed: 1
 --- !u!1001 &1815936469
 Prefab:
   m_ObjectHideFlags: 0
@@ -5794,6 +5873,21 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400144, guid: c04ad52f45533294b8005266bd5bdebe, type: 3}
   m_PrefabInternal: {fileID: 1912369050}
+--- !u!1 &1922024098 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100006, guid: 7ed848a623bdcab4e89886ccd31dbefb, type: 3}
+  m_PrefabInternal: {fileID: 1590471372}
+--- !u!114 &1922024099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1922024098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08df2be76cffeb9408a94e9e92cd9b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1981139724
 GameObject:
   m_ObjectHideFlags: 0

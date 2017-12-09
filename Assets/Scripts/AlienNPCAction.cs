@@ -33,9 +33,14 @@ public class AlienNPCAction : MonoBehaviour, INPCAction {
     void Start () {
         
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    public void idle()
+    {
+        throw new NotImplementedException();
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 

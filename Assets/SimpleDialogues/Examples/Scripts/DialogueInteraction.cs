@@ -153,10 +153,11 @@ public class DialogueInteraction : MonoBehaviour {
 
     private void handleTrigger(string triggerName)
     {
-        Transform actor = getNPC(triggerName);
-        if(actor != null)
+        List<string> parsedCommandsList = parseCommands(triggerName);
+        List<KeyValuePair<Transform, string>> actorActions = getNPC(parsedCommandsList);
+        if(actorActions.Count > 0)
         {
-            triggerNPC(actor, triggerName);
+            triggerNPC(actorActions);
         }
         
         if(triggerName.Contains("StartMove"))
@@ -178,55 +179,81 @@ public class DialogueInteraction : MonoBehaviour {
         }
     }
 
-    private void triggerNPC(Transform actingNPC, string npcCommand)
+    private void triggerNPC(List<KeyValuePair<Transform, string>> npcActions)
     {
-        if (npcCommand.Contains("Talk"))
+        foreach (KeyValuePair<Transform, string> actorWithAction in npcActions)
         {
-            INPCAction npcAction = (INPCAction)actingNPC.GetComponent(typeof(INPCAction));
-            npcAction.talk();
-        }
-        if (npcCommand.Contains("End"))
-        {
-            INPCAction npcAction = (INPCAction)actingNPC.GetComponent(typeof(INPCAction));
-            npcAction.setDeactive();
+            Transform actor = actorWithAction.Key;
+            string action = actorWithAction.Value;
+            INPCAction npcAction = (INPCAction)actor.GetComponent(typeof(INPCAction));
+            if (action.Contains("Talk"))
+            {
+                npcAction.talk();
+            }
+            else if (action.Contains("End"))
+            {
+                npcAction.setDeactive();
+            }
+            else if (action.Contains("Idle"))
+            {
+                npcAction.idle();
+            }
         }
     }
 
-    private Transform getNPC(string npcName)
+    private List<KeyValuePair<Transform, string>> getNPC(List<string> commandList)
     {
-        Transform actingNPC = null;
-        if(npcName.Contains("Alien"))
+        List<KeyValuePair<Transform, string>> npcActions = new List<KeyValuePair<Transform, string>>();
+        foreach (string command in commandList)
         {
-            actingNPC = npcDictionary["exo_gray"];
+            Transform actor = null;
+            if (command.Contains("Alien"))
+            {
+                actor = npcDictionary["exo_gray"];
+            }
+            else if (command.Contains("XO"))
+            {
+                actor = npcDictionary["Second_Officer"];
+            }
+            else if (command.Contains("Pilot"))
+            {
+                actor = npcDictionary["Pilot"];
+            }
+            else if (command.Contains("Nav"))
+            {
+                actor = npcDictionary["Navigator"];
+            }
+            else if (command.Contains("Comms"))
+            {
+                actor = npcDictionary["Comm_Officer"];
+            }
+            else if (command.Contains("Science"))
+            {
+                actor = npcDictionary["Chief_Science_Officer"];
+            }
+            else if (command.Contains("Engineer"))
+            {
+                actor = npcDictionary["Chief_Engineering_Officer"];
+            }
+            else if (command.Contains("Tactical"))
+            {
+                actor = npcDictionary["Chief_Tactical_Officer"];
+            }
+
+            if (actor != null)
+            {
+                KeyValuePair<Transform, string> npcToCommand = new KeyValuePair<Transform, string>(actor, command);
+                npcActions.Add(npcToCommand);
+            }
         }
-        else if (npcName.Contains("XO"))
-        {
-            actingNPC = npcDictionary["Second_Officer"];
-        }
-        else if (npcName.Contains("Pilot"))
-        {
-            actingNPC = npcDictionary["Pilot"];
-        }
-        else if (npcName.Contains("Nav"))
-        {
-            actingNPC = npcDictionary["Navigator"];
-        }
-        else if (npcName.Contains("Comms"))
-        {
-            actingNPC = npcDictionary["Comm_Officer"];
-        }
-        else if (npcName.Contains("Science"))
-        {
-            actingNPC = npcDictionary["Chief_Science_Officer"];
-        }
-        else if (npcName.Contains("Engineer"))
-        {
-            actingNPC = npcDictionary["Chief_Engineering_Officer"];
-        }
-        else if (npcName.Contains("Tacticts"))
-        {
-            actingNPC = npcDictionary["Chief_Tactical_Officer"];
-        }
-        return actingNPC;
+        return npcActions;
+    }
+
+    private List<string> parseCommands(string commands)
+    {
+        List<string> commandsList = new List<string>();
+        string[] splittedCommands = commands.Split(',');
+        commandsList.AddRange(splittedCommands);
+        return commandsList;
     }
 }

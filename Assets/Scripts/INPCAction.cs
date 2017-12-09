@@ -7,4 +7,5 @@ public interface INPCAction
     void talk();
     void setDeactive();
     string npcName();
+    void idle();
 }
