@@ -19,6 +19,8 @@ public class DialogueInteraction : MonoBehaviour {
     GameObject backPanel;
     [SerializeField]
     GameObject ship;
+    [SerializeField]
+    GameObject skyboxes;
 
     bool nextEnd = false;
 
@@ -55,6 +57,10 @@ public class DialogueInteraction : MonoBehaviour {
         }
         else
         {
+            if (nextEnd)
+            {
+                endScene();
+            }
             Progress();
         }
     }
@@ -102,7 +108,7 @@ public class DialogueInteraction : MonoBehaviour {
         //Sets our text to the current text
         dialogueText.text = npc.GetCurrentDialogue();
         //Just debug log our triggers for example purposes
-        if (npc.HasTrigger())
+        if (npc.HasTrigger() && !nextEnd)
         {
             Debug.Log("Triggered: " + npc.GetTrigger());
             handleTrigger(npc.GetTrigger());
@@ -279,6 +285,11 @@ public class DialogueInteraction : MonoBehaviour {
                 moveShip.stopMoving();
                 moveShip.setRotationTo(new Vector3(dirX, dirY, dirZ));
             }
+            if(moveCommandToValues.Key.Contains("HyperDrive"))
+            {
+                SkyboxFader fader = skyboxes.GetComponent<SkyboxFader>();
+                fader.swapToSkyBox((int) moveCommandToValues.Value[0], moveCommandToValues.Value[1]);
+            }
         }
     }
 
@@ -290,21 +301,24 @@ public class DialogueInteraction : MonoBehaviour {
             if (command.Contains("Ship"))
             {
                 string[] moveTrigger = command.Split(',');
-                string moveType = moveTrigger[0];
-                float speed = float.Parse(moveTrigger[1]);
-                float duration = float.Parse(moveTrigger[2]);
-                float dirX = float.Parse(moveTrigger[3]);
-                float dirY = float.Parse(moveTrigger[4]);
-                float dirZ = float.Parse(moveTrigger[5]);
                 List<float> vector = new List<float>();
-                vector.Add(speed);
-                vector.Add(duration);
-                vector.Add(dirX);
-                vector.Add(dirY);
-                vector.Add(dirZ);
+                string moveType = moveTrigger[0];
+                for (int i = 1; i < moveTrigger.Length; i++)
+                {                    
+                    vector.Add(float.Parse(moveTrigger[i]));
+                }
                 shipActions.Add(new KeyValuePair<string, List<float>>(moveType, vector));
             }
         }
         return shipActions;
+    }
+
+    private void endScene()
+    {
+        if(npc.GetCurrentTree() == "Scene1")
+        {
+            SkyboxFader fader = skyboxes.GetComponent<SkyboxFader>();
+            fader.endFade();
+        }
     }
 }

@@ -102,7 +102,7 @@ public class TacticalNPCAction : MonoBehaviour, INPCAction {
 
     private void rotateToIdle()
     {
-        Debug.Log("returning to idle");
+        Debug.Log("Tactics rotating");
         anim.SetBool("Moving", true);
         isFacingTarget = false;
         float step = rotationSpeed * Time.deltaTime;
