@@ -32,7 +32,7 @@ public class DialogueInteraction : MonoBehaviour {
 
     
 	void Start() {
-        //npc.SetTree("FirstMeeting"); //This sets the current tree to be used. Resets to the first node when called.
+        npc.SetTree("Scene1"); //This sets the current tree to be used. Resets to the first node when called.
         defaultBackPanelColor = backPanel.GetComponent<Image>().color;
         Display();
         npcDictionary = new Dictionary<string, Transform>();

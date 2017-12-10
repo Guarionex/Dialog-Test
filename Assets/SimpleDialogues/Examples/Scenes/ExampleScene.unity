@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15256453, g: 0.12772661, b: 0.10402679, a: 1}
+  m_IndirectSpecularColor: {r: 0.29899752, g: 0.2507531, b: 0.20416611, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3434,7 +3434,7 @@ MonoBehaviour:
       Trigger: 1
       TriggerText: ShipSetRotation,0,0,0,200,0;ShipHyperDrive,1,10
       Connections: 
-  - CurrentId: 45
+  - CurrentId: 48
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
@@ -3948,55 +3948,12 @@ MonoBehaviour:
       Parent: 34
       Trigger: 0
       TriggerText: 
-      Connections: 24000000
-    - ID: 36
-      Size:
-        serializedVersion: 2
-        x: 734
-        y: 1072
-        width: 150
-        height: 125
-      Text: Ver well, let's end our argument. The more time we wate talking, the more
-        survivors die on our planet...
-      Type: 1
-      NodeType: 1
-      Parent: 35
-      Trigger: 0
-      TriggerText: 
-      Connections: 2500000025000000
-    - ID: 37
-      Size:
-        serializedVersion: 2
-        x: 721
-        y: 1221
-        width: 150
-        height: 125
-      Text: All hands to battle station!
-      Type: 2
-      NodeType: 1
-      Parent: -2
-      Trigger: 0
-      TriggerText: 
-      Connections: 27000000
-    - ID: 39
-      Size:
-        serializedVersion: 2
-        x: 881
-        y: 1221
-        width: 150
-        height: 125
-      Text: 
-      Type: 1
-      NodeType: 1
-      Parent: 37
-      Trigger: 0
-      TriggerText: 
-      Connections: 28000000
+      Connections: 2d000000
     - ID: 40
       Size:
         serializedVersion: 2
-        x: 902
-        y: 1080
+        x: 919
+        y: 1069
         width: 150
         height: 125
       Text: Charge the main guns!
@@ -4062,6 +4019,49 @@ MonoBehaviour:
       Trigger: 0
       TriggerText: 
       Connections: 
+    - ID: 45
+      Size:
+        serializedVersion: 2
+        x: 726
+        y: 1071
+        width: 150
+        height: 125
+      Text: Very well, let's end our argument. The more time we waste talking, the
+        more survivors die on our planet...
+      Type: 1
+      NodeType: 1
+      Parent: 35
+      Trigger: 0
+      TriggerText: 
+      Connections: 2e000000
+    - ID: 46
+      Size:
+        serializedVersion: 2
+        x: 721
+        y: 1209
+        width: 150
+        height: 125
+      Text: All hands to battle stations!
+      Type: 2
+      NodeType: 1
+      Parent: 45
+      Trigger: 0
+      TriggerText: 
+      Connections: 2f000000
+    - ID: 47
+      Size:
+        serializedVersion: 2
+        x: 907
+        y: 1206
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 46
+      Trigger: 0
+      TriggerText: 
+      Connections: 28000000
   CurrentSet: 1
   TabList:
   - Scene1
