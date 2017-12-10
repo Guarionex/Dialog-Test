@@ -13,6 +13,7 @@ public class TacticalNPCAction : MonoBehaviour, INPCAction {
     private Quaternion idleRotation;
     private bool isTalking;
     private bool isFacingTarget;
+    private bool isReturningtoIdle;
 
     public string npcName()
     {
@@ -46,6 +47,7 @@ public class TacticalNPCAction : MonoBehaviour, INPCAction {
     public void idle()
     {
         isTalking = false;
+        isReturningtoIdle = true;
         if (isInIdleRotation())
         {
             anim.SetBool("Pure_Idle", false);
@@ -67,7 +69,7 @@ public class TacticalNPCAction : MonoBehaviour, INPCAction {
         {
             faceToTalk();
         }
-        else if (!isTalking && !isInIdleRotation())
+        else if (!isTalking && !isInIdleRotation() && isReturningtoIdle)
         {
             rotateToIdle();
         }
@@ -79,6 +81,7 @@ public class TacticalNPCAction : MonoBehaviour, INPCAction {
         idleRotation = transform.rotation;
         isTalking = false;
         isFacingTarget = false;
+        isReturningtoIdle = false;
     }
 
     private void faceToTalk()
@@ -99,12 +102,14 @@ public class TacticalNPCAction : MonoBehaviour, INPCAction {
 
     private void rotateToIdle()
     {
+        Debug.Log("returning to idle");
         anim.SetBool("Moving", true);
         isFacingTarget = false;
         float step = rotationSpeed * Time.deltaTime;
         transform.rotation = Quaternion.RotateTowards(transform.rotation, idleRotation, step * Mathf.Rad2Deg);
         if (isInIdleRotation())
         {
+            isReturningtoIdle = false;
             anim.SetBool("Moving", false);
             anim.SetBool("Pure_Idle", false);
         }

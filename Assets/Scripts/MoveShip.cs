@@ -49,4 +49,8 @@ public class MoveShip : MonoBehaviour {
         _speed = 0;
     }
 
+    public void setRotationTo(Vector3 direction)
+    {
+        transform.rotation = Quaternion.Euler(direction);
+    }
 }

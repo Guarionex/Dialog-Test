@@ -159,24 +159,8 @@ public class DialogueInteraction : MonoBehaviour {
         {
             triggerNPC(actorActions);
         }
-        
-        if(triggerName.Contains("StartMove"))
-        {
-            string[] moveTrigger = triggerName.Split(',');
-            float speed = float.Parse(moveTrigger[1]);
-            float duration = float.Parse(moveTrigger[2]);
-            float dirX = float.Parse(moveTrigger[3]);
-            float dirY = float.Parse(moveTrigger[4]);
-            float dirZ = float.Parse(moveTrigger[5]);
 
-            MoveShip moveShip = ship.GetComponent<MoveShip>();
-            moveShip.moveBySpeedDirection(speed, duration, new Vector3(dirX, dirY, dirZ));
-        }
-        if (triggerName.Contains("EndMove"))
-        {
-            MoveShip moveShip = ship.GetComponent<MoveShip>();
-            moveShip.stopMoving();
-        }
+        moveShipCommand(parsedCommandsList);
     }
 
     private void triggerNPC(List<KeyValuePair<Transform, string>> npcActions)
@@ -252,8 +236,75 @@ public class DialogueInteraction : MonoBehaviour {
     private List<string> parseCommands(string commands)
     {
         List<string> commandsList = new List<string>();
-        string[] splittedCommands = commands.Split(',');
+        string[] splittedCommands = commands.Split(';');
         commandsList.AddRange(splittedCommands);
         return commandsList;
+    }
+
+    private void moveShipCommand(List<string> commands)
+    {
+        List<KeyValuePair<string, List<float>>> shipActions = parseShipMovement(commands);
+        MoveShip moveShip = ship.GetComponent<MoveShip>();
+        foreach (KeyValuePair<string, List<float>> moveCommandToValues in shipActions)
+        {
+            if (moveCommandToValues.Key.Contains("StartMove"))
+            {
+                float speed = moveCommandToValues.Value[0];
+                float duration = moveCommandToValues.Value[1];
+                float dirX = moveCommandToValues.Value[2];
+                float dirY = moveCommandToValues.Value[3];
+                float dirZ = moveCommandToValues.Value[4];
+
+                moveShip.moveBySpeedDirection(speed, duration, new Vector3(dirX, dirY, dirZ));
+            }
+            if (moveCommandToValues.Key.Contains("EndMove"))
+            {
+                moveShip.stopMoving();
+            }
+            if (moveCommandToValues.Key.Contains("Rotate"))
+            {
+                float speed = moveCommandToValues.Value[0];
+                float dirX = moveCommandToValues.Value[2];
+                float dirY = moveCommandToValues.Value[3];
+                float dirZ = moveCommandToValues.Value[4];
+
+                moveShip.moveBySpeedDirection(speed, 0, new Vector3(dirX, dirY, dirZ));
+            }
+            if(moveCommandToValues.Key.Contains("SetRotation"))
+            {
+                float dirX = moveCommandToValues.Value[2];
+                float dirY = moveCommandToValues.Value[3];
+                float dirZ = moveCommandToValues.Value[4];
+
+                moveShip.stopMoving();
+                moveShip.setRotationTo(new Vector3(dirX, dirY, dirZ));
+            }
+        }
+    }
+
+    private List<KeyValuePair<string, List<float>>> parseShipMovement(List<string> commands)
+    {
+        List<KeyValuePair<string, List<float>>> shipActions = new List<KeyValuePair<string, List<float>>>();
+        foreach (string command in commands)
+        {
+            if (command.Contains("Ship"))
+            {
+                string[] moveTrigger = command.Split(',');
+                string moveType = moveTrigger[0];
+                float speed = float.Parse(moveTrigger[1]);
+                float duration = float.Parse(moveTrigger[2]);
+                float dirX = float.Parse(moveTrigger[3]);
+                float dirY = float.Parse(moveTrigger[4]);
+                float dirZ = float.Parse(moveTrigger[5]);
+                List<float> vector = new List<float>();
+                vector.Add(speed);
+                vector.Add(duration);
+                vector.Add(dirX);
+                vector.Add(dirY);
+                vector.Add(dirZ);
+                shipActions.Add(new KeyValuePair<string, List<float>>(moveType, vector));
+            }
+        }
+        return shipActions;
     }
 }
