@@ -47,7 +47,6 @@ public class SkyboxFader : MonoBehaviour {
 
     public void endFade()
     {
-        Debug.Log("End fade");
         isMatChanging = false;
         isNextSkyboxLoaded = false;
         stopHyperSpaceParticles();
@@ -74,7 +73,6 @@ public class SkyboxFader : MonoBehaviour {
         //float blend = Mathf.Lerp(0.0f, 1.0f, currentTime);
         currentTime += Time.deltaTime / time;
         RenderSettings.skybox.SetFloat("_Blend", blend);
-        Debug.Log("blend = " + blend + ", currentTime = " + currentTime);
         if(blend >= 1.0f)
         {
             if (isNextSkyboxLoaded)

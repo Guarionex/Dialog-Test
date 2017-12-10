@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.001090045, g: 0.00109294, b: 0.001090045, a: 1}
+  m_IndirectSpecularColor: {r: 0.15256453, g: 0.12772661, b: 0.10402679, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3434,9 +3434,638 @@ MonoBehaviour:
       Trigger: 1
       TriggerText: ShipSetRotation,0,0,0,200,0;ShipHyperDrive,1,10
       Connections: 
-  CurrentSet: 0
+  - CurrentId: 45
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 40
+        y: 71
+        width: 150
+        height: 125
+      Text: Captain we've arrived to the rendezvous with the Elordens of the Uhrgane
+        Confederation
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 33
+        y: 223
+        width: 150
+        height: 125
+      Text: Do we proceed with the mission?
+      Type: 1
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 020000000300000004000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 235
+        y: 76
+        width: 150
+        height: 125
+      Text: Proveed. All ship systems set to high alert.
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 244
+        y: 229
+        width: 150
+        height: 125
+      Text: What do you mean?
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 28
+        y: 373
+        width: 150
+        height: 125
+      Text: Attack the Elordens!
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 05000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 25
+        y: 516
+        width: 150
+        height: 125
+      Text: Ma'am, this will destroy a potential ally and just create meaningless
+        skirmishes for their territory.
+      Type: 1
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 0600000008000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 23
+        y: 657
+        width: 150
+        height: 125
+      Text: I understand. All ship systems set to high alert. Attack!
+      Type: 2
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 07000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 23
+        y: 799
+        width: 150
+        height: 125
+      Text: Yes ma'am!
+      Type: 0
+      NodeType: 2
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 201
+        y: 661
+        width: 150
+        height: 125
+      Text: Let me rethink this...
+      Type: 2
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 244
+        y: 373
+        width: 150
+        height: 125
+      Text: We have a choice, we can wipe out the Elordens, giving the Uhrgane Confederation
+        a huge blow or...
+      Type: 0
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 0a000000
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 241
+        y: 517
+        width: 150
+        height: 125
+      Text: We proceed with the mission and take down the Veludens and form an alliance
+        with the Confederation. So...
+      Type: 0
+      NodeType: 1
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 399
+        y: 79
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 0c000000
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 421
+        y: 228
+        width: 150
+        height: 125
+      Text: Communications, get me the Uhrgane field commander.
+      Type: 2
+      NodeType: 1
+      Parent: 11
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 424
+        y: 369
+        width: 150
+        height: 125
+      Text: Yes ma'am.
+      Type: 0
+      NodeType: 1
+      Parent: 12
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 420
+        y: 511
+        width: 150
+        height: 125
+      Text: Captain Vrataski, you are late...
+      Type: 1
+      NodeType: 1
+      Parent: 13
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f000000
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 400
+        y: 647
+        width: 150
+        height: 125
+      Text: Sorry commander, we were finalizing our plans.
+      Type: 2
+      NodeType: 1
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 10000000
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 397
+        y: 789
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 15
+      Trigger: 0
+      TriggerText: 
+      Connections: 11000000
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 393
+        y: 927
+        width: 150
+        height: 125
+      Text: Form up yout fleet.
+      Type: 2
+      NodeType: 1
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 12000000
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 391
+        y: 1070
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 17
+      Trigger: 0
+      TriggerText: 
+      Connections: 13000000
+    - ID: 19
+      Size:
+        serializedVersion: 2
+        x: 391
+        y: 1216
+        width: 150
+        height: 125
+      Text: We will open with a surprise attack from our main guns.
+      Type: 2
+      NodeType: 1
+      Parent: 18
+      Trigger: 0
+      TriggerText: 
+      Connections: 14000000
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 551
+        y: 1216
+        width: 150
+        height: 125
+      Text: You realize how heavily fortified the Veludens have organized around our
+        planet?
+      Type: 0
+      NodeType: 1
+      Parent: 19
+      Trigger: 0
+      TriggerText: 
+      Connections: 15000000
+    - ID: 21
+      Size:
+        serializedVersion: 2
+        x: 552
+        y: 1069
+        width: 150
+        height: 125
+      Text: Even your main guns won't be enough.
+      Type: 0
+      NodeType: 1
+      Parent: 20
+      Trigger: 0
+      TriggerText: 
+      Connections: 16000000
+    - ID: 22
+      Size:
+        serializedVersion: 2
+        x: 552
+        y: 928
+        width: 150
+        height: 125
+      Text: Why did you Humans only send one ship?
+      Type: 1
+      NodeType: 1
+      Parent: 21
+      Trigger: 0
+      TriggerText: 
+      Connections: 17000000
+    - ID: 23
+      Size:
+        serializedVersion: 2
+        x: 557
+        y: 788
+        width: 150
+        height: 125
+      Text: We sent a recon squad ahead of our FTL jump.
+      Type: 2
+      NodeType: 1
+      Parent: 22
+      Trigger: 0
+      TriggerText: 
+      Connections: 18000000
+    - ID: 24
+      Size:
+        serializedVersion: 2
+        x: 567
+        y: 651
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 23
+      Trigger: 0
+      TriggerText: 
+      Connections: 19000000
+    - ID: 25
+      Size:
+        serializedVersion: 2
+        x: 576
+        y: 513
+        width: 150
+        height: 125
+      Text: We target painted their capitol ship.
+      Type: 2
+      NodeType: 1
+      Parent: 24
+      Trigger: 0
+      TriggerText: 
+      Connections: 1a000000
+    - ID: 26
+      Size:
+        serializedVersion: 2
+        x: 584
+        y: 374
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 25
+      Trigger: 0
+      TriggerText: 
+      Connections: 1b000000
+    - ID: 27
+      Size:
+        serializedVersion: 2
+        x: 580
+        y: 236
+        width: 150
+        height: 125
+      Text: We will take it out with our opening shot.
+      Type: 2
+      NodeType: 1
+      Parent: 26
+      Trigger: 0
+      TriggerText: 
+      Connections: 1c000000
+    - ID: 28
+      Size:
+        serializedVersion: 2
+        x: 572
+        y: 93
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 27
+      Trigger: 0
+      TriggerText: 
+      Connections: 1d000000
+    - ID: 29
+      Size:
+        serializedVersion: 2
+        x: 732
+        y: 93
+        width: 150
+        height: 125
+      Text: Without their leaders, the Veluden's laxk of tactical aptitude will make
+        them easy prey.
+      Type: 2
+      NodeType: 1
+      Parent: 28
+      Trigger: 0
+      TriggerText: 
+      Connections: 1e000000
+    - ID: 30
+      Size:
+        serializedVersion: 2
+        x: 744
+        y: 242
+        width: 150
+        height: 125
+      Text: We were not informed of a recon squad nor did we even see one, how are
+        we to trust you when you don't provide us with information?
+      Type: 1
+      NodeType: 1
+      Parent: 29
+      Trigger: 0
+      TriggerText: 
+      Connections: 1f000000
+    - ID: 31
+      Size:
+        serializedVersion: 2
+        x: 744
+        y: 377
+        width: 150
+        height: 125
+      Text: You may have some of the best stealth technology...
+      Type: 2
+      NodeType: 1
+      Parent: 30
+      Trigger: 0
+      TriggerText: 
+      Connections: 20000000
+    - ID: 32
+      Size:
+        serializedVersion: 2
+        x: 746
+        y: 515
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 31
+      Trigger: 0
+      TriggerText: 
+      Connections: 21000000
+    - ID: 33
+      Size:
+        serializedVersion: 2
+        x: 740
+        y: 649
+        width: 150
+        height: 125
+      Text: But my team has the best skills.
+      Type: 2
+      NodeType: 1
+      Parent: 32
+      Trigger: 0
+      TriggerText: 
+      Connections: 22000000
+    - ID: 34
+      Size:
+        serializedVersion: 2
+        x: 736
+        y: 795
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 33
+      Trigger: 0
+      TriggerText: 
+      Connections: 23000000
+    - ID: 35
+      Size:
+        serializedVersion: 2
+        x: 733
+        y: 930
+        width: 150
+        height: 125
+      Text: They knew how to counter your sensors and pass for a Veluden ship.
+      Type: 2
+      NodeType: 1
+      Parent: 34
+      Trigger: 0
+      TriggerText: 
+      Connections: 24000000
+    - ID: 36
+      Size:
+        serializedVersion: 2
+        x: 734
+        y: 1072
+        width: 150
+        height: 125
+      Text: Ver well, let's end our argument. The more time we wate talking, the more
+        survivors die on our planet...
+      Type: 1
+      NodeType: 1
+      Parent: 35
+      Trigger: 0
+      TriggerText: 
+      Connections: 2500000025000000
+    - ID: 37
+      Size:
+        serializedVersion: 2
+        x: 721
+        y: 1221
+        width: 150
+        height: 125
+      Text: All hands to battle station!
+      Type: 2
+      NodeType: 1
+      Parent: -2
+      Trigger: 0
+      TriggerText: 
+      Connections: 27000000
+    - ID: 39
+      Size:
+        serializedVersion: 2
+        x: 881
+        y: 1221
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 37
+      Trigger: 0
+      TriggerText: 
+      Connections: 28000000
+    - ID: 40
+      Size:
+        serializedVersion: 2
+        x: 902
+        y: 1080
+        width: 150
+        height: 125
+      Text: Charge the main guns!
+      Type: 2
+      NodeType: 1
+      Parent: 39
+      Trigger: 0
+      TriggerText: 
+      Connections: 29000000
+    - ID: 41
+      Size:
+        serializedVersion: 2
+        x: 911
+        y: 929
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 40
+      Trigger: 0
+      TriggerText: 
+      Connections: 2a000000
+    - ID: 42
+      Size:
+        serializedVersion: 2
+        x: 912
+        y: 787
+        width: 150
+        height: 125
+      Text: Helm, accelerate to attack speed!
+      Type: 2
+      NodeType: 1
+      Parent: 41
+      Trigger: 0
+      TriggerText: 
+      Connections: 2b000000
+    - ID: 43
+      Size:
+        serializedVersion: 2
+        x: 908
+        y: 641
+        width: 150
+        height: 125
+      Text: Yes ma'am!
+      Type: 0
+      NodeType: 1
+      Parent: 42
+      Trigger: 0
+      TriggerText: 
+      Connections: 2c000000
+    - ID: 44
+      Size:
+        serializedVersion: 2
+        x: 911
+        y: 505
+        width: 150
+        height: 125
+      Text: Engaging!
+      Type: 0
+      NodeType: 2
+      Parent: 43
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 1
   TabList:
   - Scene1
+  - Scene2
 --- !u!1001 &1028258582
 Prefab:
   m_ObjectHideFlags: 0
