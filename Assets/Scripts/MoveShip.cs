@@ -24,10 +24,9 @@ public class MoveShip : MonoBehaviour {
 
     void FixedUpdate ()
     {
-        
         if (_duration > 0)
         {
-            Vector3 speedVector = _direction * _speed;
+            Vector3 speedVector = (transform.forward * -1) * _speed;
             Vector3 moveVector = speedVector * Time.deltaTime;
             transform.position += moveVector;
             _duration -= Time.deltaTime;

@@ -109,6 +109,7 @@ public class TacticalNPCAction : MonoBehaviour, INPCAction {
         transform.rotation = Quaternion.RotateTowards(transform.rotation, idleRotation, step * Mathf.Rad2Deg);
         if (isInIdleRotation())
         {
+            Debug.Log("Ended");
             isReturningtoIdle = false;
             anim.SetBool("Moving", false);
             anim.SetBool("Pure_Idle", false);
@@ -117,6 +118,6 @@ public class TacticalNPCAction : MonoBehaviour, INPCAction {
 
     private bool isInIdleRotation()
     {
-        return transform.rotation == idleRotation;
+        return transform.rotation.eulerAngles == idleRotation.eulerAngles;
     }
 }

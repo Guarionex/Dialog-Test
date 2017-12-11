@@ -117,6 +117,6 @@ public class EngineerNPCAction : MonoBehaviour, INPCAction {
 
     private bool isInIdleRotation()
     {
-        return transform.rotation == idleRotation;
+        return transform.rotation.eulerAngles == idleRotation.eulerAngles;
     }
 }

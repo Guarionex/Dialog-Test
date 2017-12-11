@@ -60,8 +60,12 @@ public class DialogueInteraction : MonoBehaviour {
             if (nextEnd)
             {
                 endScene();
+                Display();
             }
-            Progress();
+            else
+            {
+                Progress();
+            }
         }
     }
 
@@ -319,6 +323,7 @@ public class DialogueInteraction : MonoBehaviour {
         {
             SkyboxFader fader = skyboxes.GetComponent<SkyboxFader>();
             fader.endFade();
+            MainSotry2();
         }
     }
 }

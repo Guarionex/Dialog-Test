@@ -8,6 +8,10 @@ public class SkyboxFader : MonoBehaviour {
     private Material[] mat = new Material[7];
     [SerializeField]
     private GameObject hyperspace;
+    [SerializeField]
+    private List<GameObject> Scene1Objects;
+    [SerializeField]
+    private List<GameObject> Scene2Objects;
     private ParticleSystem hyperSpaceParticles;
     private Component[] hyperSpaceChildrenParticles;
     private bool isMatChanging = false;
@@ -16,9 +20,14 @@ public class SkyboxFader : MonoBehaviour {
     private float transitionTime = 0f;
     private float currentTime = 0f;
     private bool isNextSkyboxLoaded = false;
+    private Dictionary<int, List<GameObject>> sceneToSceneObject;
 
 	// Use this for initialization
 	void Start () {
+        sceneToSceneObject = new Dictionary<int, List<GameObject>>();
+        sceneToSceneObject.Add(0, Scene1Objects);
+        sceneToSceneObject.Add(1, Scene2Objects);
+        setAllSceneObjectsToInvisible();
         resetAllSkyBoxBlends();
         hyperSpaceParticles = hyperspace.GetComponent<ParticleSystem>();
         hyperSpaceChildrenParticles = hyperspace.GetComponentsInChildren(typeof(ParticleSystem));
@@ -52,6 +61,7 @@ public class SkyboxFader : MonoBehaviour {
         stopHyperSpaceParticles();
         RenderSettings.skybox = mat[skyBoxIndex];
         RenderSettings.skybox.SetFloat("_Blend", 1.0f);
+        fadeInSceneObjects(skyBoxIndex, 1.0f);
 
     }
 
@@ -80,6 +90,7 @@ public class SkyboxFader : MonoBehaviour {
                 isMatChanging = false;
                 isNextSkyboxLoaded = false;
                 setLoopForHyperSpaceParticles(false);
+                fadeInSceneObjects(index, blend);
             }
             else
             {
@@ -137,6 +148,40 @@ public class SkyboxFader : MonoBehaviour {
         for(int i = 0; i < mat.Length; i++)
         {
             mat[i].SetFloat("_Blend", 0);
+        }
+    }
+
+    private void fadeInSceneObjects(int sceneIndex, float blend)
+    {
+        foreach(GameObject sceneObject in sceneToSceneObject[sceneIndex])
+        {
+            sceneObject.SetActive(true);
+            /*Component[] sceneObjectRenderer = sceneObject.GetComponentsInChildren(typeof(Renderer));
+            foreach (Renderer renderer in sceneObjectRenderer)
+            {
+                Color newAlphaColor = renderer.material.color;
+                newAlphaColor.a = blend;
+                renderer.material.color = newAlphaColor;
+            }*/
+        }
+    }
+
+    private void setAllSceneObjectsToInvisible()
+    {
+        foreach(KeyValuePair<int, List<GameObject>> kvp in sceneToSceneObject)
+        {
+            foreach(GameObject sceneObject in kvp.Value)
+            {
+                sceneObject.SetActive(false);
+                /*Component[] sceneObjectRenderer = sceneObject.GetComponentsInChildren(typeof(Renderer));
+                foreach (Renderer renderer in sceneObjectRenderer)
+                {
+                    Color newAlphaColor = renderer.material.color;
+                    Debug.Log("Color = " + newAlphaColor);
+                    newAlphaColor.a = 0f;
+                    renderer.material.color = newAlphaColor;
+                }*/
+            }
         }
     }
 }
