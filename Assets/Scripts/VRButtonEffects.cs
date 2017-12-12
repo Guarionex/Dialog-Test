@@ -21,8 +21,7 @@ public class VRButtonEffects : MonoBehaviour {
         currentTime = 0f;
     }
 	
-	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
         Debug.DrawRay(transform.position, transform.forward*-1, Color.green);
         if(isHighlighted && currentTime <= highlightTime)
         {
@@ -31,24 +30,24 @@ public class VRButtonEffects : MonoBehaviour {
             transform.position += (transform.forward * -1) * 0.1f * blend;*/
             currentTime += Time.deltaTime / highlightTime;
             float stepDistance = Time.deltaTime / highlightTime;
-            transform.position = Vector3.Lerp(transform.position, highlightedPos, currentTime);
+            transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(1.1f, 1.1f, 1.1f), currentTime);
             isPositionSet = false;
         }
         else if (isHighlighted && currentTime >= highlightTime && !isPositionSet)
         {
-            transform.position = highlightedPos;
+            transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
             isPositionSet = true;
         }
         else if(!isHighlighted && currentTime <= highlightTime)
         {
             currentTime += Time.deltaTime / highlightTime;
             float stepDistance = Time.deltaTime / highlightTime;
-            transform.position = Vector3.Lerp(transform.position, regularPos, currentTime);
+            transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(1f, 1f, 1f), currentTime);
             isPositionSet = false;
         }
         else if(!isHighlighted && currentTime >= highlightTime && !isPositionSet)
         {
-            transform.position = regularPos;
+            transform.localScale = new Vector3(1f, 1f, 1f);
             isPositionSet = true;
         }
 	}
@@ -72,7 +71,7 @@ public class VRButtonEffects : MonoBehaviour {
 
     private void resetPosition()
     {
-        transform.position = regularPos;
+        transform.localScale = new Vector3(1f, 1f, 1f);
         isPositionSet = true;
         isHighlighted = false;
     }

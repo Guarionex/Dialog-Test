@@ -12,7 +12,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: GuarionexStudios
-  productName: VR_Visual_Novel
+  productName: The New Contender
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -148,7 +148,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.GuarionexStudios.VR_Visual_Novel
+    Android: com.GuarionexStudios.TheNewContender
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 24
@@ -234,10 +234,49 @@ PlayerSettings:
   m_AndroidBanners:
   - width: 320
     height: 180
-    banner: {fileID: 0}
+    banner: {fileID: 2800000, guid: 98664dc121cf65a4c88d9065b1b3ee72, type: 3}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: Android
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 178d079721784e641a7ef052aa1f4271, type: 3}
+      m_Width: 192
+      m_Height: 192
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 8c294850802432e4d8d800ce7cb0a427, type: 3}
+      m_Width: 144
+      m_Height: 144
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 3422d26aaa9ebfa44abae9abf25c3b76, type: 3}
+      m_Width: 96
+      m_Height: 96
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: a454763db68da3740b8cd2f8ee1b8f7a, type: 3}
+      m_Width: 72
+      m_Height: 72
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: f223f7f7b3e66f740baacd3c2a948b6a, type: 3}
+      m_Width: 48
+      m_Height: 48
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 88a9f4562666cba4ea7377605cca5694, type: 3}
+      m_Width: 36
+      m_Height: 36
+      m_Kind: 0
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 178d079721784e641a7ef052aa1f4271, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
   m_BuildTargetVRSettings:
@@ -602,8 +641,10 @@ PlayerSettings:
   xboxOneScriptCompiler: 0
   vrEditorSettings:
     daydream:
-      daydreamIconForeground: {fileID: 0}
-      daydreamIconBackground: {fileID: 0}
+      daydreamIconForeground: {fileID: 2800000, guid: 697ff3cea6a31fa4b9ae151eca3c35f7,
+        type: 3}
+      daydreamIconBackground: {fileID: 2800000, guid: 94d4935d62bce1e4298dfd3c8e9d93f4,
+        type: 3}
   cloudServicesEnabled:
     UNet: 1
   facebookSdkVersion: 7.9.4
