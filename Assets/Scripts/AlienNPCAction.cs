@@ -27,7 +27,7 @@ public class AlienNPCAction : MonoBehaviour, INPCAction {
     {
 
         setActive();
-        anim.SetTrigger("Talk");
+        anim.SetTrigger("Speek");
     }
 
     public string npcName()
